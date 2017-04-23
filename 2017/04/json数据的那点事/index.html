@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="wordpress," />
+  <meta name="keywords" content="json,js,前端," />
 
 
 
@@ -90,19 +90,28 @@
 
 
 
-<meta name="description" content="在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。
-在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码">
+<meta name="description" content="结构JSON有两种结构，对象和数组。
+
+JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是字符串，而value可以是字符串，数值，true，false，null，对象或数组)：
+
+12345&amp;#123;    name: xiao ming,    ag">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wordpress权限及后台FTP登录失败问题解决方法">
-<meta property="og:url" content="http://tmac.wang/2016/02/27/wordpress权限及后台FTP登录失败问题解决方法/index.html">
+<meta property="og:title" content="JSON数据的那点事">
+<meta property="og:url" content="http://tmac.wang/2017/04/json数据的那点事/index.html">
 <meta property="og:site_name" content="qumuase">
-<meta property="og:description" content="在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。
-在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码">
-<meta property="og:updated_time" content="2017-04-22T17:10:01.000Z">
+<meta property="og:description" content="结构JSON有两种结构，对象和数组。
+
+JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是字符串，而value可以是字符串，数值，true，false，null，对象或数组)：
+
+12345&amp;#123;    name: xiao ming,    ag">
+<meta property="og:updated_time" content="2017-04-22T17:10:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wordpress权限及后台FTP登录失败问题解决方法">
-<meta name="twitter:description" content="在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。
-在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码">
+<meta name="twitter:title" content="JSON数据的那点事">
+<meta name="twitter:description" content="结构JSON有两种结构，对象和数组。
+
+JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是字符串，而value可以是字符串，数值，true，false，null，对象或数组)：
+
+12345&amp;#123;    name: xiao ming,    ag">
 
 
 
@@ -130,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://tmac.wang/2016/02/27/wordpress权限及后台FTP登录失败问题解决方法/"/>
+  <link rel="canonical" href="http://tmac.wang/2017/04/json数据的那点事/"/>
 
 
 
 
 
-  <title> wordpress权限及后台FTP登录失败问题解决方法 | qumuase </title>
+  <title> JSON数据的那点事 | qumuase </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -314,7 +323,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2016/02/27/wordpress权限及后台FTP登录失败问题解决方法/">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/04/json数据的那点事/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="qumuase">
@@ -335,7 +344,7 @@
             
             
               
-                wordpress权限及后台FTP登录失败问题解决方法
+                JSON数据的那点事
               
             
           </h1>
@@ -350,8 +359,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-27T20:06:42+08:00">
-                2016-02-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-21T00:30:00+08:00">
+                2017-04-21
               </time>
             
 
@@ -373,8 +382,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/建站/" itemprop="url" rel="index">
-                    <span itemprop="name">建站</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -412,11 +421,30 @@
       
 
       
-        <ol>
-<li>在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。</li>
-<li>在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码:</li>
+        <h4 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h4><p>JSON有两种结构，对象和数组。</p>
+<blockquote>
+<p>JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是<strong>字符串</strong>，而value可以是<strong>字符串，数值，true，false，null，对象或数组</strong>)：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    name: xiao ming,</div><div class="line">    age: 18,</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>JSON数组结构是以“[”开始，“]”结束，中间由n个以“，”分隔的值列表组成，一般语法结构如下方代码所示：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">   &#123;</div><div class="line">        name: xiao ming,</div><div class="line">        age: 18 </div><div class="line">    &#125;,</div><div class="line">    &#123;</div><div class="line">         name: xiao hong,</div><div class="line">         age: 21   </div><div class="line">    &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<h4 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h4><blockquote>
+<p>分为两种方式：“.”和“[key]”。</p>
+</blockquote>
+<hr>
+<p>呃呃呃，好啰嗦。其实上面的都不是重点，重点是：<br>有这样一组JSON数据（如下图），需要遍历相应数据展示到页面的对应位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;10&quot;: &#123;</div><div class="line">    &quot;id&quot;: 7,</div><div class="line">    &quot;sorts&quot;: 0,</div><div class="line">    &quot;level&quot;: 1,</div><div class="line">    &quot;goods&quot;: []</div><div class="line">  &#125;,</div><div class="line">  &quot;11&quot;: &#123;</div><div class="line">    &quot;id&quot;: 8,</div><div class="line">    &quot;sorts&quot;: 0,</div><div class="line">    &quot;level&quot;: 1,</div><div class="line">    &quot;goods&quot;: []</div><div class="line">  &#125;,</div><div class="line">  &quot;12&quot;: &#123;</div><div class="line">    &quot;id&quot;: 10,</div><div class="line">    &quot;sorts&quot;: 0,</div><div class="line">    &quot;level&quot;: 2,</div><div class="line">    &quot;goods&quot;: []</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>在遍历展示对应数据的时候json.parse()后直接获取JSON对象的length，返回的结果肯定是undefined了。</li>
+<li>遍历后json[i]获取到i的值是对应当前数据的key值，而期望得到的是以0为下标开始的数据格式(类似于JSON数组的下标表示方式)。</li>
+<li>网上的方法如下图for in的循环方式，处理结果只能得到数据的总长度，解决了最开始直接获取length输出undefined的问题，数据结构依然不是期望结果。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define(&apos;FS_METHOD&apos;, &quot;direct&quot;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function getjson(json)&#123;</div><div class="line"></div><div class="line">    var jsonLength = 0;</div><div class="line">    </div><div class="line">        for(var item in json)&#123;</div><div class="line">        </div><div class="line">        jsonLength++;</div><div class="line">    </div><div class="line">    &#125;</div><div class="line"></div><div class="line">    return jsonLength;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>最终，找到一种解决方法就是通过将当前的JSON对象转化为JSON数组的格式，然后就可以继续对数据进行相应操作了。转化代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">json = JSON.parse(json);</div><div class="line">json = Object.keys(json).map(function(k)&#123;</div><div class="line"> return json[k];</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p> 待续。</p>
 
       
     </div>
@@ -446,7 +474,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/wordpress/" rel="tag"># wordpress</a>
+            <a href="/tags/json/" rel="tag"># json</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -459,14 +491,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/13/python3-3.5.1 already installed, it's just not linked/" rel="prev" title="python3-3.5.1 already installed, it's just not linked">
-                python3-3.5.1 already installed, it's just not linked <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/红薯种植记录/" rel="prev" title="红薯育苗种植记录">
+                红薯育苗种植记录 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -514,8 +550,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -577,6 +622,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#结构"><span class="nav-number">1.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作"><span class="nav-number">2.</span> <span class="nav-text">操作</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

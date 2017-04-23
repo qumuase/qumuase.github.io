@@ -4,42 +4,42 @@
     
     <entry>
       <title><![CDATA[红薯育苗种植记录]]></title>
-      <url>%2F2017%2F04%2F22%2F%E7%BA%A2%E8%96%AF%E7%A7%8D%E6%A4%8D%E8%AE%B0%E5%BD%95%2F</url>
+      <url>%2F2017%2F04%2F%E7%BA%A2%E8%96%AF%E7%A7%8D%E6%A4%8D%E8%AE%B0%E5%BD%95%2F</url>
       <content type="text"><![CDATA[保持更新，直至收获或全部培育失败。 &gt; 2017.04.22 育苗入土 &gt; 2017.01.10 优质红薯育苗开始 由来： 年前得到了一些市面买不到(主要是对方不售卖)的优质红薯，不是很多，本着今年吃完明年还想继续吃得上的精神，萌发了育苗扦插种植的想法。 育苗11月10号(5℃±)选择部分红薯切面入水育苗 14月22号(25℃±)培育好的苗二次培育 因为无过往经验，网上技术教程也众说纷坛，所以为了保证至少存活下来一棵苗，主要分为以下五种实施方案： 室温下自然生长的母体带苗入营养土培育。 室温下自然生长的母体培育出来的嫩苗单独入营养土培育。 入水育苗的母体所培育出来的嫩苗单独入沙土培育。 入水育苗的母体所培育出来的嫩苗单独入水二次培育。 入水育苗的母体继续保持培育。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[JSON数据的那点事]]></title>
-      <url>%2F2017%2F04%2F21%2Fjson%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B%2F</url>
+      <url>%2F2017%2F04%2Fjson%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B%2F</url>
       <content type="text"><![CDATA[结构JSON有两种结构，对象和数组。 JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是字符串，而value可以是字符串，数值，true，false，null，对象或数组)： 12345&#123; name: xiao ming, age: 18, ...&#125; JSON数组结构是以“[”开始，“]”结束，中间由n个以“，”分隔的值列表组成，一般语法结构如下方代码所示： 12345678910[ &#123; name: xiao ming, age: 18 &#125;, &#123; name: xiao hong, age: 21 &#125;] 操作 分为两种方式：“.”和“[key]”。 呃呃呃，好啰嗦。其实上面的都不是重点，重点是：有这样一组JSON数据（如下图），需要遍历相应数据展示到页面的对应位置。 1234567891011121314151617181920&#123; &quot;10&quot;: &#123; &quot;id&quot;: 7, &quot;sorts&quot;: 0, &quot;level&quot;: 1, &quot;goods&quot;: [] &#125;, &quot;11&quot;: &#123; &quot;id&quot;: 8, &quot;sorts&quot;: 0, &quot;level&quot;: 1, &quot;goods&quot;: [] &#125;, &quot;12&quot;: &#123; &quot;id&quot;: 10, &quot;sorts&quot;: 0, &quot;level&quot;: 2, &quot;goods&quot;: [] &#125;&#125; 在遍历展示对应数据的时候json.parse()后直接获取JSON对象的length，返回的结果肯定是undefined了。 遍历后json[i]获取到i的值是对应当前数据的key值，而期望得到的是以0为下标开始的数据格式(类似于JSON数组的下标表示方式)。 网上的方法如下图for in的循环方式，处理结果只能得到数据的总长度，解决了最开始直接获取length输出undefined的问题，数据结构依然不是期望结果。 12345678910111213function getjson(json)&#123; var jsonLength = 0; for(var item in json)&#123; jsonLength++; &#125; return jsonLength;&#125; 最终，找到一种解决方法就是通过将当前的JSON对象转化为JSON数组的格式，然后就可以继续对数据进行相应操作了。转化代码如下： 1234json = JSON.parse(json);json = Object.keys(json).map(function(k)&#123; return json[k];&#125;); 待续。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>%2F2017%2F04%2F20%2Fhello-world%2F</url>
+      <url>%2F2017%2F04%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome !]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[sublime text 头部自动化注释（DocBlockr）]]></title>
-      <url>%2F2016%2F04%2F20%2Fsublime%20text%20%E5%A4%B4%E9%83%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B3%A8%E9%87%8A%EF%BC%88DocBlockr%EF%BC%89%2F</url>
+      <url>%2F2016%2F04%2Fsublime%20text%20%E5%A4%B4%E9%83%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B3%A8%E9%87%8A%EF%BC%88DocBlockr%EF%BC%89%2F</url>
       <content type="text"><![CDATA[通过sublime text下package control 的 Install Package安装DocBlockr插件。 打开Preferences -&gt; Package Settings -&gt; DocBlockr-&gt;Settings - User 配置文件,也可以直接将新修改的配置信息保存到”Default Settins”。(“Default Settins”是默认配置文件，需要管理员权限才能修改。一般情况下不推荐直接修改系统默认配置文件)。 将下面的代码根据需求保存到User配置文件中并保存文件，再次触发DocBlockr即可看到效果。 123456789101112131415161718&#123; &quot;jsdocs_param_name&quot;: false, &quot;jsdocs_param_description&quot;: false, &quot;jsdocs_return_description&quot;: [], &quot;jsdocs_return_tag&quot;: false, &quot;jsdocs_extra_tags_go_after&quot;: [], &quot;jsdocs_align_tags&quot;: [], &quot;jsdocs_extra_tags&quot;: [ &quot;&quot;, &quot;@DateTime &#123;&#123;datetime&#125;&#125;&quot;, &quot;&quot;, &quot;@author ***&quot;, &quot;&quot;, &quot;保持优雅的代码注释&quot;, &quot;maintain the elegant code comments&quot;, &quot;@version $&#123;1:[version]&#125;&quot;, ]&#125; 更多自定义配置可参考官方文档（https://github.com/spadgos/sublime-jsdocs）。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[python3-3.5.1 already installed, it's just not linked]]></title>
-      <url>%2F2016%2F04%2F13%2Fpython3-3.5.1%20already%20installed%2C%20it's%20just%20not%20linked%2F</url>
+      <url>%2F2016%2F04%2Fpython3-3.5.1%20already%20installed%2C%20it's%20just%20not%20linked%2F</url>
       <content type="text"><![CDATA[mac安装python3版本之后无法启动，运行下面一下代码即可： 1sudo ln -s /Library/Frameworks/Python.framework/Versions/3.4/bin/python3 /usr/local/bin/python3]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[wordpress权限及后台FTP登录失败问题解决方法]]></title>
-      <url>%2F2016%2F02%2F27%2Fwordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+      <url>%2F2016%2F02%2Fwordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
       <content type="text"><![CDATA[在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。 在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码: 1define(&apos;FS_METHOD&apos;, &quot;direct&quot;);]]></content>
     </entry>
 
