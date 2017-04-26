@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[《深入浅出Node.js》笔记摘录（一）]]></title>
       <url>%2F2017%2F04%2F%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
-      <content type="text"><![CDATA[一]]></content>
+      <content type="text"><![CDATA[模块的实现 区分为node自身提供的核心模块与用户编写的文件模块优先从缓存加载 路径分析 文件定位 编译执行文件拓展名分析require( )在分析标识符的过程中，会出现标识符中不包含文件拓展名的情况。node会按照.js、.json、.node的顺序补充拓展名，依次尝试。]]></content>
     </entry>
 
     

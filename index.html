@@ -703,7 +703,15 @@
 
       
         
-          <p>一</p>
+          <ol>
+<li>模块的实现</li>
+</ol>
+<p>区分为node自身提供的核心模块与用户编写的文件模块<br>优先从缓存加载</p>
+<ul>
+<li>路径分析</li>
+<li>文件定位</li>
+<li>编译执行<br>文件拓展名分析<br>require( )在分析标识符的过程中，会出现标识符中不包含文件拓展名的情况。node会按照.js、.json、.node的顺序补充拓展名，依次尝试。</li>
+</ul>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/《深入浅出Node.js》笔记（一）/#more" rel="contents">
