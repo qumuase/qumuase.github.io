@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
+    <lastmod>2017-04-30T05:20:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>JSON数据的那点事</title>
+        <pubTime>2017-04-20T16:30:00.000Z</pubTime>
+        
+        <tag>json</tag>
+         
+        <tag>js</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://tmac.wang/2017/04/%E7%BA%A2%E8%96%AF%E7%A7%8D%E6%A4%8D%E8%AE%B0%E5%BD%95/</loc>
@@ -20,30 +44,6 @@
            
              
               <breadCrumb title="杂的文" url="http://tmac.wang/categories/%E6%9D%82%E7%9A%84%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
-    <lastmod>2017-04-29T12:37:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>JSON数据的那点事</title>
-        <pubTime>2017-04-20T16:30:00.000Z</pubTime>
-        
-        <tag>json</tag>
-         
-        <tag>js</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
           
         </display>
     </data>

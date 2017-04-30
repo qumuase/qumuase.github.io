@@ -104,7 +104,7 @@ JSON对象结构是以“{”大括号开始，以“}”大括号结束。中�
 JSON对象结构是以“{”大括号开始，以“}”大括号结束。中间部分由n个以“，”分隔的“key(键)/value(值)”对构成，关键字和值之间以“：”分隔，一般语法结构如下方代码所示(其中key是字符串，而value可以是字符串，数值，true，false，null，对象或数组)：
 
 12345&amp;#123;    name: xiao ming,">
-<meta property="og:updated_time" content="2017-04-29T12:37:11.000Z">
+<meta property="og:updated_time" content="2017-04-30T05:20:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSON数据的那点事">
 <meta name="twitter:description" content="1.基础JSON有两种结构，对象和数组。
@@ -445,6 +445,11 @@ JSON对象结构是以“{”大括号开始，以“}”大括号结束。中�
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function getjson(json)&#123;</div><div class="line"></div><div class="line">    var jsonLength = 0;</div><div class="line">    </div><div class="line">        for(var item in json)&#123;</div><div class="line">        </div><div class="line">        jsonLength++;</div><div class="line">    </div><div class="line">    &#125;</div><div class="line"></div><div class="line">    return jsonLength;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>最终，通过<code>Object.keys</code>与<code>.map()</code>方法组合将JSON对象转化为JSON数组。转化代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">json = JSON.parse(json);</div><div class="line">json = Object.keys(json).map(function(k)&#123;</div><div class="line"> return json[k];</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>根据数据情况需先将字符串转化为对象</li>
+<li><code>Object.keys(json)</code>返回参数json可被遍历的属性</li>
+<li><code>.map()</code>返回json遍历后JSON数组。</li>
+</ul>
 
       
     </div>
