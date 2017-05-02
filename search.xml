@@ -45,6 +45,13 @@
 
     
     <entry>
+      <title><![CDATA[技术点记录]]></title>
+      <url>%2F2016%2F05%2F%E5%B0%8F%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[sublime text 头部自动化注释（DocBlockr）]]></title>
       <url>%2F2016%2F04%2Fsublime%20text%20%E5%A4%B4%E9%83%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B3%A8%E9%87%8A%EF%BC%88DocBlockr%EF%BC%89%2F</url>
       <content type="text"><![CDATA[通过sublime text下package control 的 Install Package安装DocBlockr插件。 打开Preferences -&gt; Package Settings -&gt; DocBlockr-&gt;Settings - User 配置文件,也可以直接将新修改的配置信息保存到”Default Settins”。(“Default Settins”是默认配置文件，需要管理员权限才能修改。一般情况下不推荐直接修改系统默认配置文件)。 将下面的代码根据需求保存到User配置文件中并保存文件，再次触发DocBlockr即可看到效果。 123456789101112131415161718&#123; &quot;jsdocs_param_name&quot;: false, &quot;jsdocs_param_description&quot;: false, &quot;jsdocs_return_description&quot;: [], &quot;jsdocs_return_tag&quot;: false, &quot;jsdocs_extra_tags_go_after&quot;: [], &quot;jsdocs_align_tags&quot;: [], &quot;jsdocs_extra_tags&quot;: [ &quot;&quot;, &quot;@DateTime &#123;&#123;datetime&#125;&#125;&quot;, &quot;&quot;, &quot;@author ***&quot;, &quot;&quot;, &quot;保持优雅的代码注释&quot;, &quot;maintain the elegant code comments&quot;, &quot;@version $&#123;1:[version]&#125;&quot;, ]&#125; 更多自定义配置可参考官方文档（https://github.com/spadgos/sublime-jsdocs）。]]></content>
