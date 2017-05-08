@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Zeplin已支持windows系统]]></title>
+      <url>%2F2017%2F05%2Fzeplin%E5%B7%B2%E6%94%AF%E6%8C%81windows%E7%B3%BB%E7%BB%9F%2F</url>
+      <content type="text"><![CDATA[背景及相关Zeplin，由 Zeppelin 一词演变而来，是一款为设计师和前端开发者提供设计原稿交接与沟通的高效平台，可进行标注、注释，还提供了便利的团队协作功能。目前该软件已全面支持Sketch、Photoshop，最早只支持MAC平台使用，但在16年5月份已经更新了测试版本对windows系统的支持（官方文章）。不过分地说有了Zeplin，马克曼可以退出你的桌面了。(国内也有类似的软件—标你妹，有兴趣的可以研究一下)。 下载mac版应用下载地址windows 64位应用下载地址windows 32位应用下载地址着重介绍一下windows版本，目前windows系统软件方面要求最低是photoshop cc 2015版的。插件方面可以在应用下载后点击顶部Help &gt; Install Photoshop Plugin板块下载Zeplin的photoshop插件（官方帮助链接）。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[技术点记录]]></title>
       <url>%2F2017%2F05%2F%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
       <content type="text"><![CDATA[单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
