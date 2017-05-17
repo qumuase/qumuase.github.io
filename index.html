@@ -491,6 +491,30 @@
 <td>false</td>
 <td>如果你开发web app（而不是通过PhoneGap封装的混合应用)，那么这个功能将很有用（浏览器的URL将会看上去像这样 <code>&quot;http://my-webapp.com/#/about.html&quot;</code>)。用户可以通过浏览器默认的前进后退按钮来操作。</td>
 </tr>
+<tr>
+<td>pushStateSeparator</td>
+<td>string</td>
+<td>‘#!/‘</td>
+<td>push state 时候在URL中使用的分隔符，如果改成 “#page/“，那么你的url将会像这样 <code>&quot;http://myapp.com/#page/about.html&quot;</code></td>
+</tr>
+<tr>
+<td>pushStateRoot</td>
+<td>string</td>
+<td>undefined</td>
+<td>Push state URL根路径, 比如 <code>&quot;http://my-app.com/&quot;</code>. 只有当你把 pushStateSeparator 设置为空(“”)时才有效。</td>
+</tr>
+<tr>
+<td>pushStateNoAnimation</td>
+<td>boolean</td>
+<td>false</td>
+<td>如果设置为 false，那么会继承当前 View 的 animatePages 参数。如果设置为 true，那么页面切换的时候将没有动画效果。</td>
+</tr>
+<tr>
+<td>pushStatePreventOnLoad</td>
+<td>boolean</td>
+<td>true</td>
+<td>如果开启，则应用程序加载时的第一个弹出状态事件会被忽略，因为它可能会阻止不必要的问题。 但是当你使用异步加载框架（如Require.js）初始化应用程序时，可以禁用它</td>
+</tr>
 </tbody>
 </table>
 
