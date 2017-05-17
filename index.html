@@ -410,7 +410,52 @@
       
         
           
-            
+            <blockquote>
+<p>Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp; Android 风格的WEB APP。</p>
+</blockquote>
+<p>由于Framework7是通过data-page等方式实现ajax加载新页面，因此Framework7属于单页面编程用法。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。</p>
+<p>实现路由跳转的方式官方实例化方法有以下几种：</p>
+<h4 id="ajaxLinks参数"><a href="#ajaxLinks参数" class="headerlink" title="ajaxLinks参数"></a>ajaxLinks参数</h4><p>在<a href="http://framework7.io/docs/init-app.html" target="_blank" rel="external">初始化应用（英文）</a>| <a href="http://docs.framework7.cn/Index/init_app.html" target="_blank" rel="external">初始化应用（中文）</a>时候传递不同的 ajaxLinks 参数。<br>关于<code>ajaxLinks</code>参数的官方说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>router</td>
+<td>string</td>
+<td>undefined</td>
+<td>指定哪些链接需要用ajax加载，默认情况下（当为undefined时）Framework7 会使用ajax加载所有的链接。你可以通过设置一个CSS选择器来指定需要通过Ajax加载的链接，比如 “a.ajax” - 只有class 为 “ajax” 的链接。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="router参数"><a href="#router参数" class="headerlink" title="router参数"></a>router参数</h4><p>同时也可以配置<code>router</code>参数实现自己的路由方式。<br>关于<code>router</code>参数的官方说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>router</td>
+<td>boolean</td>
+<td>true</td>
+<td>如果你有自己的路由实现，你可以禁用默认的路由</td>
+</tr>
+</tbody>
+</table>
+<h4 id="externalLinks参数"><a href="#externalLinks参数" class="headerlink" title="externalLinks参数"></a>externalLinks参数</h4><p>为每个需要实现路由跳转的链接添加 <code>external</code> class类名，🌰：<code>&lt;a href=&quot;index.html&quot; class=&quot;external&quot;&gt;</code>。同时正确<code>href</code>值的链接（比如是空的或者是 <code>#</code>）也不会实现ajax加载新页面。当然后者在常见实际项目中是很少出现的。<br>关于<code>externalLinks</code>参数的官方说明：<br>| 参数 | 类型 | 默认值 | 说明 |<br>| — | — | — | — |<br>| externalLinks | string | ‘.external’ | 不应该被 Framework7 管理的链接的CSS选择器。比如 “.external” 会匹配到这样的链接 <a href="somepage.html" class="external"> (因为它有 “external” 类) |</a></p>
+<h4 id="pushState参数"><a href="#pushState参数" class="headerlink" title="pushState参数"></a>pushState参数</h4><p>关于<code>pushState</code>相关参数的官方说明：<br>| 参数 | 类型 | 默认值 | 说明 |<br>| — | — | — | — |<br>| pushState | boolean | false | 如果你开发web app（而不是通过PhoneGap封装的混合应用)，那么这个功能将很有用（浏览器的URL将会看上去像这样 “http://my-webapp.com/#/about.html”)。用户可以通过浏览器默认的前进后退按钮来操作。 |</p>
+
           
         
       
@@ -553,7 +598,7 @@
           <p>Coding强制捆绑五秒跳转页面，影响的人群是Coding绑定自定义域名且拥有者为非付费的会员。<br>跳转页面的出现频率为：1 次/自定义域名/Cookie/天，也就是说，在非隐身模式没有清理 Cookie 的情况下，访问同一个自定义域名，一天只会看到一次跳转页面。<br>所捆绑页面为类似于腾讯公益404页面，一句名人名言附带作者图像。及此页面的相关说明。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/05/Coding Pages自定义域名捆绑跳转页面/#далее" rel="contents">
+            <a class="btn" href="/2017/05/Coding Pages自定义域名捆绑跳转页面/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -699,7 +744,7 @@
           <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>Zeplin，由 Zeppelin 一词演变而来，是一款为设计师和前端开发者提供设计原稿交接与沟通的高效平台，可进行标注、注释，还提供了便利的团队协作功能。目前该软件已全面支持Sketch、Photoshop，最早只支持MAC平台使用，但在16年5月份已经更新了测试版本对windows系统的支持（<a href="https://blog.zeplin.io/photoshop-open-beta-now-3f8f502fc4de">官方文章</a>）。<br>不过分地说有了Zeplin，马克曼可以退出你的桌面了。(国内也有类似的软件—<a href="http://www.biaonimeia.com/">标你妹</a>，有兴趣的可以研究一下)。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/05/Zeplin新版介绍--已全面支持windows系统/#далее" rel="contents">
+            <a class="btn" href="/2017/05/Zeplin新版介绍--已全面支持windows系统/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -990,7 +1035,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">INFO  Deleted database.</div><div class="line">INFO  Start processing</div><div class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div><div class="line">FATAL (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/hexo日常报错维护/#далее" rel="contents">
+            <a class="btn" href="/2017/04/hexo日常报错维护/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1136,7 +1181,7 @@
           <p>1.创建一条资源路由,如下图<br><img src="http://images.tmac.wang/640.png" alt=""><br>2.执行命令<code>php artisan make:controller TaskController --resource</code>，此时,在app/Http/Controllers目录下生成一个TaskController资源控制器，在index方法获取所有的tasks,如下图：<br><img src="http://images.tmac.wang/640.jpeg" alt=""></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/Laravel＋Vuejs实现Task增删改查功能（转）/#далее" rel="contents">
+            <a class="btn" href="/2017/04/Laravel＋Vuejs实现Task增删改查功能（转）/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1290,7 +1335,7 @@
 </ul>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/《深入浅出Node.js》笔记（一）/#далее" rel="contents">
+            <a class="btn" href="/2017/04/《深入浅出Node.js》笔记（一）/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1441,7 +1486,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1月10号(5℃±)选择部分红薯切面入水育苗</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/红薯种植记录/#далее" rel="contents">
+            <a class="btn" href="/2017/04/红薯种植记录/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1591,7 +1636,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    name: xiao ming,</div><div class="line">    age: 18,</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/04/json数据的那点事/#далее" rel="contents">
+            <a class="btn" href="/2017/04/json数据的那点事/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
