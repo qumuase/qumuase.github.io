@@ -92,23 +92,26 @@
 
 <meta name="description" content="Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp;amp; Android 风格的WEB APP。
 
-由于Framework7是通过data-page等方式实现ajax加载新页面，因此Framework7属于单页面编程用法。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。
-实现路由跳转的方式官方实">
+由于Framework7是通过ajax加载新页面，因此Framework7属于单页面编程用法。比如：
+1&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Go to About page&amp;lt;/a&amp;gt;
+当我们">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Framework7实现路由跳转">
 <meta property="og:url" content="http://tmac.wang/2017/05/Framework7实现路由跳转/index.html">
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp;amp; Android 风格的WEB APP。
 
-由于Framework7是通过data-page等方式实现ajax加载新页面，因此Framework7属于单页面编程用法。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。
-实现路由跳转的方式官方实">
-<meta property="og:updated_time" content="2017-05-17T07:47:39.000Z">
+由于Framework7是通过ajax加载新页面，因此Framework7属于单页面编程用法。比如：
+1&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Go to About page&amp;lt;/a&amp;gt;
+当我们">
+<meta property="og:updated_time" content="2017-05-17T15:17:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Framework7实现路由跳转">
 <meta name="twitter:description" content="Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp;amp; Android 风格的WEB APP。
 
-由于Framework7是通过data-page等方式实现ajax加载新页面，因此Framework7属于单页面编程用法。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。
-实现路由跳转的方式官方实">
+由于Framework7是通过ajax加载新页面，因此Framework7属于单页面编程用法。比如：
+1&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Go to About page&amp;lt;/a&amp;gt;
+当我们">
 
 
 
@@ -421,7 +424,9 @@
         <blockquote>
 <p>Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp; Android 风格的WEB APP。</p>
 </blockquote>
-<p>由于Framework7是通过data-page等方式实现ajax加载新页面，因此Framework7属于单页面编程用法。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。</p>
+<p>由于Framework7是通过ajax加载新页面，因此Framework7属于单页面编程用法。比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;index.html&quot;&gt;Go to About page&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>当我们点击这个链接的时候，Framework7会通过Ajax获取 index.html，解析它的内容，然后把它实时插入到DOM中，并且做一个动画切换到这个新页面。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。</p>
 <p>实现路由跳转的方式官方实例化方法有以下几种：</p>
 <h4 id="ajaxLinks参数"><a href="#ajaxLinks参数" class="headerlink" title="ajaxLinks参数"></a>ajaxLinks参数</h4><p>在<a href="http://framework7.io/docs/init-app.html" target="_blank" rel="external">初始化应用（英文）</a>| <a href="http://docs.framework7.cn/Index/init_app.html" target="_blank" rel="external">初始化应用（中文）</a>时候传递不同的 ajaxLinks 参数。<br>关于<code>ajaxLinks</code>参数的官方说明：</p>
 <table>
@@ -461,8 +466,44 @@
 </tr>
 </tbody>
 </table>
-<h4 id="externalLinks参数"><a href="#externalLinks参数" class="headerlink" title="externalLinks参数"></a>externalLinks参数</h4><p>为每个需要实现路由跳转的链接添加 <code>external</code> class类名，🌰：<code>&lt;a href=&quot;index.html&quot; class=&quot;external&quot;&gt;</code>。同时正确<code>href</code>值的链接（比如是空的或者是 <code>#</code>）也不会实现ajax加载新页面。当然后者在常见实际项目中是很少出现的。<br>关于<code>externalLinks</code>参数的官方说明：<br>| 参数 | 类型 | 默认值 | 说明 |<br>| — | — | — | — |<br>| externalLinks | string | ‘.external’ | 不应该被 Framework7 管理的链接的CSS选择器。比如 “.external” 会匹配到这样的链接 <a href="somepage.html" class="external"> (因为它有 “external” 类) |</a></p>
-<h4 id="pushState参数"><a href="#pushState参数" class="headerlink" title="pushState参数"></a>pushState参数</h4><p>关于<code>pushState</code>相关参数的官方说明：<br>| 参数 | 类型 | 默认值 | 说明 |<br>| — | — | — | — |<br>| pushState | boolean | false | 如果你开发web app（而不是通过PhoneGap封装的混合应用)，那么这个功能将很有用（浏览器的URL将会看上去像这样 “http://my-webapp.com/#/about.html”)。用户可以通过浏览器默认的前进后退按钮来操作。 |</p>
+<h4 id="externalLinks参数"><a href="#externalLinks参数" class="headerlink" title="externalLinks参数"></a>externalLinks参数</h4><p>为每个需要实现路由跳转的链接添加 <code>external</code> class类名，🌰：<code>&lt;a href=&quot;index.html&quot; class=&quot;external&quot;&gt;</code>。同时正确<code>href</code>值的链接（比如是空的或者是 <code>#</code>）也不会实现ajax加载新页面。当然后者在常见实际项目中是很少出现的。<br>关于<code>externalLinks</code>参数的官方说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externalLinks</td>
+<td>string</td>
+<td>‘.external’</td>
+<td>不应该被 Framework7 管理的链接的CSS选择器。比如 “.external” 会匹配到这样的链接 <code>&lt;a href=&quot;somepage.html&quot; class=&quot;external&quot;&gt;</code> (因为它有 “external” 类)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pushState参数"><a href="#pushState参数" class="headerlink" title="pushState参数"></a>pushState参数</h4><p>关于<code>pushState</code>相关参数的官方说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pushState</td>
+<td>boolean</td>
+<td>false</td>
+<td>如果你开发web app（而不是通过PhoneGap封装的混合应用)，那么这个功能将很有用（浏览器的URL将会看上去像这样 <code>&quot;http://my-webapp.com/#/about.html&quot;</code>)。用户可以通过浏览器默认的前进后退按钮来操作。</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
