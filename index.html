@@ -409,116 +409,18 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS &amp; Android 风格的WEB APP。</p>
 </blockquote>
 <p>由于Framework7是通过ajax加载新页面，因此Framework7属于单页面编程用法。比如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;index.html&quot;&gt;Go to About page&lt;/a&gt;</div></pre></td></tr></table></figure>
-<p>当我们点击这个链接的时候，Framework7会通过Ajax获取 index.html，解析它的内容，然后把它实时插入到DOM中，并且做一个动画切换到这个新页面。因此在默认情况下页面路由是不会发生变化的，但是在个别特例时候我们需要路由变化实现页面跳转。</p>
-<p>实现路由跳转的方式官方实例化方法有以下几种：</p>
-<h4 id="ajaxLinks参数"><a href="#ajaxLinks参数" class="headerlink" title="ajaxLinks参数"></a>ajaxLinks参数</h4><p>在<a href="http://framework7.io/docs/init-app.html" target="_blank" rel="external">初始化应用（英文）</a>| <a href="http://docs.framework7.cn/Index/init_app.html" target="_blank" rel="external">初始化应用（中文）</a>时候传递不同的 ajaxLinks 参数。<br>关于<code>ajaxLinks</code>参数的官方说明：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>router</td>
-<td>string</td>
-<td>undefined</td>
-<td>指定哪些链接需要用ajax加载，默认情况下（当为undefined时）Framework7 会使用ajax加载所有的链接。你可以通过设置一个CSS选择器来指定需要通过Ajax加载的链接，比如 “a.ajax” - 只有class 为 “ajax” 的链接。</td>
-</tr>
-</tbody>
-</table>
-<h4 id="router参数"><a href="#router参数" class="headerlink" title="router参数"></a>router参数</h4><p>同时也可以配置<code>router</code>参数实现自己的路由方式。<br>关于<code>router</code>参数的官方说明：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>router</td>
-<td>boolean</td>
-<td>true</td>
-<td>如果你有自己的路由实现，你可以禁用默认的路由</td>
-</tr>
-</tbody>
-</table>
-<h4 id="externalLinks参数"><a href="#externalLinks参数" class="headerlink" title="externalLinks参数"></a>externalLinks参数</h4><p>为每个需要实现路由跳转的链接添加 <code>external</code> class类名，🌰：<code>&lt;a href=&quot;index.html&quot; class=&quot;external&quot;&gt;</code>。同时正确<code>href</code>值的链接（比如是空的或者是 <code>#</code>）也不会实现ajax加载新页面。当然后者在常见实际项目中是很少出现的。<br>关于<code>externalLinks</code>参数的官方说明：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>externalLinks</td>
-<td>string</td>
-<td>‘.external’</td>
-<td>不应该被 Framework7 管理的链接的CSS选择器。比如 “.external” 会匹配到这样的链接 <code>&lt;a href=&quot;somepage.html&quot; class=&quot;external&quot;&gt;</code> (因为它有 “external” 类)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="pushState参数"><a href="#pushState参数" class="headerlink" title="pushState参数"></a>pushState参数</h4><p>关于<code>pushState</code>相关参数的官方说明：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>pushState</td>
-<td>boolean</td>
-<td>false</td>
-<td>如果你开发web app（而不是通过PhoneGap封装的混合应用)，那么这个功能将很有用（浏览器的URL将会看上去像这样 <code>&quot;http://my-webapp.com/#/about.html&quot;</code>)。用户可以通过浏览器默认的前进后退按钮来操作。</td>
-</tr>
-<tr>
-<td>pushStateSeparator</td>
-<td>string</td>
-<td>‘#!/‘</td>
-<td>push state 时候在URL中使用的分隔符，如果改成 “#page/“，那么你的url将会像这样 <code>&quot;http://myapp.com/#page/about.html&quot;</code></td>
-</tr>
-<tr>
-<td>pushStateRoot</td>
-<td>string</td>
-<td>undefined</td>
-<td>Push state URL根路径, 比如 <code>&quot;http://my-app.com/&quot;</code>. 只有当你把 pushStateSeparator 设置为空(“”)时才有效。</td>
-</tr>
-<tr>
-<td>pushStateNoAnimation</td>
-<td>boolean</td>
-<td>false</td>
-<td>如果设置为 false，那么会继承当前 View 的 animatePages 参数。如果设置为 true，那么页面切换的时候将没有动画效果。</td>
-</tr>
-<tr>
-<td>pushStatePreventOnLoad</td>
-<td>boolean</td>
-<td>true</td>
-<td>如果开启，则应用程序加载时的第一个弹出状态事件会被忽略，因为它可能会阻止不必要的问题。 但是当你使用异步加载框架（如Require.js）初始化应用程序时，可以禁用它</td>
-</tr>
-</tbody>
-</table>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/Framework7实现路由跳转/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
