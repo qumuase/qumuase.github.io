@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[git日常报错处理]]></title>
       <url>%2F2017%2F05%2Fgit%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86%2F</url>
-      <content type="text"><![CDATA[git clone 报403错误由于某些原因项目由GitLab迁移至Coding托管，而本地需要重新部署，本地重新克隆远程仓库时出现了403错误： root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…remote: Coding.net Tips : [You have no permission to access this repo.]fatal: unable to access ‘https://git.coding.net/xxxxxxxx/xxxx.git/‘: The requested URL returned error: 403 经查阅是因为本地缓存了错误的密码(其实保存的是之前项目仓库的密码，现在克隆的仓库还没有声明账号和密码)。这种情况下其中一种解决办法就是克隆时将账号和密码也添加到~/.git-credentials： http://username:password@git.coding.net/xxxxxxxx/xxxx.git 如果是首次使用Coding配置项目，是需要在账号下填写密钥滴。如同GitHub及GitLab配置方法。]]></content>
+      <content type="text"><![CDATA[git clone 报403错误由于某些原因项目由GitLab迁移至Coding托管，而本地需要重新部署，本地重新克隆远程仓库时出现了403错误： root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…remote: Coding.net Tips : [You have no permission to access this repo.]fatal: unable to access ‘https://git.coding.net/xxxxxxxx/xxxx.git/‘: The requested URL returned error: 403 经查阅是因为本地缓存了错误的密码(其实保存的是之前项目仓库的密码，现在克隆的仓库还没有声明账号和密码)。这种情况下其中一种解决办法就是克隆时将账号和密码也添加到~/.git-credentials： http://username:password@git.coding.net/xxxxxxxx/xxxx.git 如果是首次使用Coding配置项目，是需要在账号下填写密钥滴。如同GitHub或GitLab使用时的配置方法。]]></content>
     </entry>
 
     
