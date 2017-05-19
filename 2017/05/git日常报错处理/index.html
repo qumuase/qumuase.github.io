@@ -100,7 +100,7 @@ root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…
 <meta property="og:description" content="git clone 报403错误由于某些原因项目由GitLab迁移至Coding托管，而本地需要重新部署，本地重新克隆远程仓库时出现了403错误：
 
 root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…remote: Coding.net Tips : [You have no permission t">
-<meta property="og:updated_time" content="2017-05-19T15:30:53.000Z">
+<meta property="og:updated_time" content="2017-05-19T15:31:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git日常报错处理">
 <meta name="twitter:description" content="git clone 报403错误由于某些原因项目由GitLab迁移至Coding托管，而本地需要重新部署，本地重新克隆远程仓库时出现了403错误：
@@ -420,7 +420,10 @@ root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…
 <p>root@xxx: git clone <a href="https://git.coding.net/xxxxxxxx/xxxx.git" target="_blank" rel="external">https://git.coding.net/xxxxxxxx/xxxx.git</a><br>cloning ‘xxx’…<br>remote: Coding.net Tips : [You have no permission to access this repo.]<br>fatal: unable to access ‘<a href="https://git.coding.net/xxxxxxxx/xxxx.git/" target="_blank" rel="external">https://git.coding.net/xxxxxxxx/xxxx.git/</a>‘: The requested URL returned error: 403</p>
 </blockquote>
 <a id="more"></a>
-<p><em>经查阅是因为本地缓存了错误的密码(其实保存的是之前项目仓库的密码，现在克隆的仓库还没有声明账号和密码)。</em><br>这种情况下其中一种解决办法就是克隆时将账号和密码也添加到<code>~/.git-credentials</code>：<br><code>http://username:password@git.coding.net/xxxxxxxx/xxxx.git</code></p>
+<p><em>经查阅是因为本地缓存了错误的密码(其实保存的是之前项目仓库的密码，现在克隆的仓库还没有声明账号和密码)。</em><br>这种情况下其中一种解决办法就是克隆时将账号和密码也添加到<code>~/.git-credentials</code>：</p>
+<blockquote>
+<p><a href="http://username:password@git.coding.net/xxxxxxxx/xxxx.git" target="_blank" rel="external">http://username:password@git.coding.net/xxxxxxxx/xxxx.git</a></p>
+</blockquote>
 <hr>
 <p><strong>如果是首次使用Coding配置项目，是需要在账号下填写密钥滴。如同GitHub及GitLab配置方法。</strong></p>
 
