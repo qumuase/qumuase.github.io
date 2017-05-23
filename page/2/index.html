@@ -848,6 +848,9 @@
 <li>在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码:</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define(&apos;FS_METHOD&apos;, &quot;direct&quot;);</div></pre></td></tr></table></figure>
+<p>抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R 777 yourfolder/</div></pre></td></tr></table></figure>
+<p>当然，严格意义上讲这样是不安全的。</p>
 
           
         
