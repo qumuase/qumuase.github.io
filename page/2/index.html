@@ -847,7 +847,7 @@
 <li>在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。<br><img src="http://images.tmac.wang/QQ%E6%88%AA%E5%9B%BE20160301231927.png" alt="wordpress"></li>
 <li>在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码:</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define(&apos;FS_METHOD&apos;, &quot;direct&quot;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(&quot;FS_METHOD&quot;, &quot;direct&quot;);</div><div class="line">define(&quot;FS_CHMOD_DIR&quot;, 0777);</div><div class="line">define(&quot;FS_CHMOD_FILE&quot;, 0777);</div></pre></td></tr></table></figure>
 <p>抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R 777 yourfolder/</div></pre></td></tr></table></figure>
 <p>当然，严格意义上讲这样是不安全的。</p>

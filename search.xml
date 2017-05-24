@@ -96,7 +96,7 @@
     <entry>
       <title><![CDATA[wordpress权限及后台FTP登录失败问题解决方法]]></title>
       <url>%2F2016%2F02%2Fwordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
-      <content type="text"><![CDATA[在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。 在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码: 1define(&apos;FS_METHOD&apos;, &quot;direct&quot;); 抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限： 1sudo chmod -R 777 yourfolder/ 当然，严格意义上讲这样是不安全的。]]></content>
+      <content type="text"><![CDATA[在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。 在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码: 123define(&quot;FS_METHOD&quot;, &quot;direct&quot;);define(&quot;FS_CHMOD_DIR&quot;, 0777);define(&quot;FS_CHMOD_FILE&quot;, 0777); 抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限： 1sudo chmod -R 777 yourfolder/ 当然，严格意义上讲这样是不安全的。]]></content>
     </entry>
 
     
