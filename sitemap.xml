@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tmac.wang/about/index.html</loc>
+    
+    <lastmod>2017-05-26T08:30:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://tmac.wang/2016/02/wordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2017-05-24T10:49:23.000Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
     
     <lastmod>2017-04-30T05:20:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://tmac.wang/about/index.html</loc>
-    
-    <lastmod>2017-04-30T04:12:09.000Z</lastmod>
     
   </url>
   
