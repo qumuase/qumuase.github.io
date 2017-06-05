@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[Coding Pages自定义域名捆绑跳转页面]]></title>
       <url>%2F2017%2F05%2FCoding%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%8D%86%E7%BB%91%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%2F</url>
-      <content type="text"><![CDATA[Coding强制捆绑五秒跳转页面，影响的人群是Coding绑定自定义域名且拥有者为非付费的会员。跳转页面的出现频率为：1 次/自定义域名/Cookie/天，也就是说，在非隐身模式没有清理 Cookie 的情况下，访问同一个自定义域名，一天只会看到一次跳转页面。所捆绑页面为类似于腾讯公益404页面，一句名人名言附带作者图像。及此页面的相关说明。 Coding Pages等待跳转页面具体说明及删除方法 2017.06.02更新官方已经上线Hosted by Coding Pages，可通过在网站首页放置Coding官方标示进而停掉Coding pages的五秒跳转页面。]]></content>
+      <content type="text"><![CDATA[Coding强制捆绑五秒跳转页面，影响的人群是Coding绑定自定义域名且拥有者为非付费的会员。跳转页面的出现频率为：1 次/自定义域名/Cookie/天，也就是说，在非隐身模式没有清理 Cookie 的情况下，访问同一个自定义域名，一天只会看到一次跳转页面。所捆绑页面为类似于腾讯公益404页面，一句名人名言附带作者图像。及此页面的相关说明。 Coding Pages等待跳转页面具体说明及删除方法 2017.06.02更新官方已经上线Hosted by Coding Pages，可通过在网站首页放置Coding官方标示进而停掉Coding pages的五秒跳转页面。 2017.06.05更新由于需要添加Hosted by Coding Pages而取消Coding pages的五秒跳转页面，故本站将在Coding pages审核后添加Hosted by Coding Pages &amp; GitHub Pages样字。]]></content>
     </entry>
 
     
