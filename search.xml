@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Hexo搭建Github Pages&Coding Pages博客]]></title>
+      <url>%2F2017%2F06%2FHexo%E6%90%AD%E5%BB%BAGithub-Pages%26Coding%20Pages%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[凡事请先阅读官方教程。此处不包含官方教程所包含内容。 目录结构1234567891011.├── .deploy├── public├── scaffolds├── scripts├── source| ├── _drafts| └── _posts├── themes├── _config.yml└── package.json .deploy：执行hexo deploy命令部署到相关Pages 服务商上的内容目录 public：执行hexo generate命令，输出的静态网页内容目录 scaffolds：layout模板文件目录，其中的md文件可以添加编辑 scripts：扩展脚本目录，这里可以自定义一些javascript脚本 source：文章源码目录，该目录下的markdown和html文件均会被hexo处理。该页面对应repo的根目录，404文件、favicon.ico文件，CNAME文件等都应该放这里，该目录下可新建页面目录。 _drafts：草稿文章 _posts：发布文章 themes：主题文件目录 _config.yml：全局配置文件，大多数的设置都在这里 package.json：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮 Hexo命令 Hexo下，通过 _config.yml 设置博客，可以想象成我们用的软件里的设置一样，只是它通过一个文件列出这些参数，然后让我们填写和修改。 全局设置在你博客目录下有一个文件名_config.yml，打开可以配置信息。 局部页面在你博客目录下 \themes\你使用的主题_config.yml 写博客相关命令 1234567Hexo常用命令： hexo new &quot;postName&quot; #新建文章 hexo new page &quot;pageName&quot; #新建页面 hexo generate #生成静态页面至public目录 hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server） hexo deploy #将.deploy目录部署到相关Pages 服务商 相关命令简写： 1234hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy 同时也支持复合命令： 1hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 有时候生成的网页会报错，生成的rss因为没有清除，一般情况下用已下命令，重新生成即可。 1$ hexo clean]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git日常报错]]></title>
       <url>%2F2017%2F05%2Fgit%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99%2F</url>
       <content type="text"><![CDATA[git clone 报403错误由于某些原因项目由GitLab迁移至Coding托管，而本地需要重新部署，本地重新克隆远程仓库时出现了403错误： root@xxx: git clone https://git.coding.net/xxxxxxxx/xxxx.gitcloning ‘xxx’…remote: Coding.net Tips : [You have no permission to access this repo.]fatal: unable to access ‘https://git.coding.net/xxxxxxxx/xxxx.git/‘: The requested URL returned error: 403 经查阅是因为本地缓存了错误的密码(其实保存的是之前项目仓库的密码，现在克隆的仓库还没有声明账号和密码)。这种情况下其中一种解决办法就是克隆时将账号和密码也添加到~/.git-credentials： http://username:password@git.coding.net/xxxxxxxx/xxxx.git 如果是首次使用Coding配置项目，是需要在账号下填写密钥滴。如同GitHub或GitLab使用时的配置方法。]]></content>
