@@ -441,6 +441,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</div></pre></td></tr></table></figure>
 <p>有时候生成的网页会报错，生成的rss因为没有清除，一般情况下用已下命令，重新生成即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+<h4 id="添加README-md文件及添加不想被解析渲染的页面"><a href="#添加README-md文件及添加不想被解析渲染的页面" class="headerlink" title="添加README.md文件及添加不想被解析渲染的页面"></a>添加README.md文件及添加不想被解析渲染的页面</h4><p>想要README.md文件不被解析渲染，只需在博客根目录下的配置文件_config.yml中配置”skip_render”选项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">skip_render: README.md</div></pre></td></tr></table></figure>
+<p>其他页面也是添加到此处即可，多值参照数组形式排列：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">skip_render: [README.md,xxx]</div></pre></td></tr></table></figure>
 
           
         
