@@ -374,18 +374,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术相关/" itemprop="url" rel="index">
-                    <span itemprop="name">技术相关</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术相关/AngularJS/" itemprop="url" rel="index">
+                  <a href="/categories/AngularJS/" itemprop="url" rel="index">
                     <span itemprop="name">AngularJS</span>
                   </a>
                 </span>
@@ -420,20 +409,14 @@
 
       
         
-          
-            <h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如<code>2</code>），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。<br>确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪烁就是发生在AngularJS解析之前。<br>专业名词叫：<em>Flash of Unrendered Content</em> ，简称FOUC。</p>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="1-ng-bind"><a href="#1-ng-bind" class="headerlink" title="1. ng-bind"></a>1. ng-bind</h4><p>用ng-bind将内容同元素绑定在一起避免这个问题。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng-bind</div></pre></td></tr></table></figure>
-<h4 id="2-ng-cloak"><a href="#2-ng-cloak" class="headerlink" title="2. ng-cloak"></a>2. ng-cloak</h4><p>ng-cloak 指令就是为了防止该问题而生。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-cloak&gt;&#123;&#123; 1 + 1 &#125;&#125;&lt;/div&gt;</div></pre></td></tr></table></figure>
-<p>页面内使用次数无限制，且无参数。</p>
-<p><strong>ng-cloak原理：</strong><br>ng-cloak实现原理为一个directive，在页面初始化时在DOM的head增加一行CSS代码，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\:form&#123;display:block;&#125;&lt;/style&gt;</div></pre></td></tr></table></figure>
-<p>AngularJS将带有ng-cloak的元素设置为display：none。<br>在等到AngularJS解析到带有ng-cloak节点的时候，会把元素上ng-cloak attribute和calss同时remove掉，这样就防止了节点的闪烁。<br>查阅AngularJS源码可以在最后一行看到实现代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!window.angular.$$csp() &amp;&amp; window.angular.element(document).find(&apos;head&apos;).prepend(&apos;&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\\:form&#123;display:block;&#125;&lt;/style&gt;&apos;);</div></pre></td></tr></table></figure>
-<p>看上去问题已经解决了。<br><strong>但是</strong>！如果浏览器的速度比AngularJS在head中加入css的速度还快这方法就失效了。<br><strong>怎么办</strong>？那就事先手动把这些css加入我们的样式文件然后引入head里。</p>
-
-          
+          <h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如<code>2</code>），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。<br>确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪烁就是发生在AngularJS解析之前。<br>专业名词叫：<em>Flash of Unrendered Content</em> ，简称FOUC。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
