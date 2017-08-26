@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[AngularJS如何操作加载后动态生成的元素]]></title>
+      <url>%2F2017%2F08%2FAngularJS%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C%E5%8A%A0%E8%BD%BD%E5%90%8E%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E7%9A%84%E5%85%83%E7%B4%A0%2F</url>
+      <content type="text"><![CDATA[前言：jQuery中，动态生成的一个元素，想要进行后续操作，可通过delegate／on／live方法（在jquery3.0中已经废除了bind方法）。 AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。 实例： 12345678910var app = angular.module(&apos;app&apos;,[]);app.directive(&apos;nav&apos;,function()&#123; return&#123; restrict:&apos;AC&apos;, template:&apos;&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt;&apos;, link:function(scope,el,attr)&#123; ... &#125; &#125;&#125;) 显而易见，这段代码会生成新的DOM： 1&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt; 但是，直接操作上述绑定的ng-click是不会生效的，原因就是前言中叙述的问题。 解决方法：通过$compile服务，编译DOM，实现动态元素的事件绑定。 12var template:&apos;&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt;&apos;,var content = $compile(template)($scope); 原理是先编译DOM，然后编译后的DOM插入到静态节点中，便可实现动态元素的事件绑定。而直接插入DOM至页面中，AngularJS并没有编译，所以ng指令绑定都是无效的。 同时不要忘了$compile服务注入： 123app.directive(&apos;nav&apos;,function($compile)&#123; &#125;)]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[MAC日常抽风解决办法]]></title>
       <url>%2F2017%2F08%2FMAC%E6%97%A5%E5%B8%B8%E6%8A%BD%E9%A3%8E%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
       <content type="text"><![CDATA[一、外接显示器时笔记本屏幕无法点亮：MacBook Pro外接显示器时出现一下几种状况： 无论是否外接显示器笔记本屏幕无法点亮，敲击键盘偶尔闪现登录页面。 未外接显示器时屏幕只有在亮度调至最高时才能点亮。 单按电源键无反应。 command+control+电源键强制重启能正常启动。 原因及解决方法：原因是因为外接显示器时将外接屏幕作为了主屏幕，当拔掉外接显示器电脑休眠再启动时就会出现上述情况。解决方法就是去 电脑系统偏好设置 &gt; 显示器 &gt; 排列 将外接显示器上的白条拖拽移动到笔记本显示器的上方。 这算不算是MAC自己抽风算不明白了呢。]]></content>

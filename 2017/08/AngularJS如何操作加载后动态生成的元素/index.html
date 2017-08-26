@@ -90,16 +90,22 @@
 
 
 
-<meta name="description" content="原因：AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如2），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪">
+<meta name="description" content="前言：jQuery中，动态生成的一个元素，想要进行后续操作，可通过delegate／on／live方法（在jquery3.0中已经废除了bind方法）。
+AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。
+实例：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决AngularJS加载时页面闪烁(错乱)的几种方式及原理">
-<meta property="og:url" content="http://tmac.wang/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/index.html">
+<meta property="og:title" content="AngularJS如何操作加载后动态生成的元素">
+<meta property="og:url" content="http://tmac.wang/2017/08/AngularJS如何操作加载后动态生成的元素/index.html">
 <meta property="og:site_name" content="qumuase">
-<meta property="og:description" content="原因：AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如2），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪">
-<meta property="og:updated_time" content="2017-08-18T08:56:56.000Z">
+<meta property="og:description" content="前言：jQuery中，动态生成的一个元素，想要进行后续操作，可通过delegate／on／live方法（在jquery3.0中已经废除了bind方法）。
+AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。
+实例：">
+<meta property="og:updated_time" content="2017-08-26T03:17:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决AngularJS加载时页面闪烁(错乱)的几种方式及原理">
-<meta name="twitter:description" content="原因：AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如2），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪">
+<meta name="twitter:title" content="AngularJS如何操作加载后动态生成的元素">
+<meta name="twitter:description" content="前言：jQuery中，动态生成的一个元素，想要进行后续操作，可通过delegate／on／live方法（在jquery3.0中已经废除了bind方法）。
+AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。
+实例：">
 
 
 
@@ -127,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://tmac.wang/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/"/>
+  <link rel="canonical" href="http://tmac.wang/2017/08/AngularJS如何操作加载后动态生成的元素/"/>
 
 
 
 
 
-  <title> 解决AngularJS加载时页面闪烁(错乱)的几种方式及原理 | qumuase </title>
+  <title> AngularJS如何操作加载后动态生成的元素 | qumuase </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -311,7 +317,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/08/AngularJS如何操作加载后动态生成的元素/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="qumuase">
@@ -332,7 +338,7 @@
             
             
               
-                解决AngularJS加载时页面闪烁(错乱)的几种方式及原理
+                AngularJS如何操作加载后动态生成的元素
               
             
           </h2>
@@ -347,8 +353,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-18T10:10:42+08:00">
-                2017-08-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-26T10:38:42+08:00">
+                2017-08-26
               </time>
             
 
@@ -409,18 +415,18 @@
       
 
       
-        <h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如<code>2</code>），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。<br>确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪烁就是发生在AngularJS解析之前。<br>专业名词叫：<em>Flash of Unrendered Content</em> ，简称FOUC。</p>
-<a id="more"></a>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="1-ng-bind"><a href="#1-ng-bind" class="headerlink" title="1. ng-bind"></a>1. ng-bind</h4><p>用ng-bind将内容同元素绑定在一起避免这个问题。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng-bind</div></pre></td></tr></table></figure>
-<h4 id="2-ng-cloak"><a href="#2-ng-cloak" class="headerlink" title="2. ng-cloak"></a>2. ng-cloak</h4><p>ng-cloak 指令就是为了防止该问题而生。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-cloak&gt;&#123;&#123; 1 + 1 &#125;&#125;&lt;/div&gt;</div></pre></td></tr></table></figure>
-<p>页面内使用次数无限制，且无参数。</p>
-<p><strong>ng-cloak原理：</strong><br>ng-cloak实现原理为一个directive，在页面初始化时在DOM的head增加一行CSS代码，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\:form&#123;display:block;&#125;&lt;/style&gt;</div></pre></td></tr></table></figure>
-<p>AngularJS将带有ng-cloak的元素设置为display：none。<br>在等到AngularJS解析到带有ng-cloak节点的时候，会把元素上ng-cloak attribute和calss同时remove掉，这样就防止了节点的闪烁。<br>查阅AngularJS源码可以在最后一行看到实现代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!window.angular.$$csp() &amp;&amp; window.angular.element(document).find(&apos;head&apos;).prepend(&apos;&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\\:form&#123;display:block;&#125;&lt;/style&gt;&apos;);</div></pre></td></tr></table></figure>
-<p>看上去问题已经解决了。<br><strong>但是</strong>！如果浏览器的速度比AngularJS在head中加入css的速度还快这方法就失效了。<br><strong>怎么办</strong>？那就事先手动把这些css加入我们的样式文件然后引入head里。</p>
+        <h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p>jQuery中，动态生成的一个元素，想要进行后续操作，可通过<code>delegate／on／live</code>方法（在jquery3.0中已经废除了bind方法）。</p>
+<p>AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。</p>
+<h4 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h4><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var app = angular.module(&apos;app&apos;,[]);</div><div class="line">app.directive(&apos;nav&apos;,function()&#123;</div><div class="line">  return&#123;</div><div class="line">    restrict:&apos;AC&apos;,</div><div class="line">    template:&apos;&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt;&apos;,</div><div class="line">    link:function(scope,el,attr)&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>显而易见，这段代码会生成新的DOM：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>但是，直接操作上述绑定的<code>ng-click</code>是不会生效的，原因就是前言中叙述的问题。</p>
+<h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><p>通过<code>$compile</code>服务，编译DOM，实现动态元素的事件绑定。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var template:&apos;&lt;div ng-click=&quot;navbar()&quot;&gt;This is navbar.&lt;/div&gt;&apos;,</div><div class="line">var content = $compile(template)($scope);</div></pre></td></tr></table></figure>
+<p>原理是先编译DOM，然后编译后的DOM插入到静态节点中，便可实现动态元素的事件绑定。<br>而直接插入DOM至页面中，AngularJS并没有编译，所以ng指令绑定都是无效的。</p>
+<p>同时不要忘了<code>$compile</code>服务注入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">app.directive(&apos;nav&apos;,function($compile)&#123;</div><div class="line">    </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -449,7 +455,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://tmac.wang/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/" title="解决AngularJS加载时页面闪烁(错乱)的几种方式及原理">http://tmac.wang/2017/08/解决AngularJS加载时页面闪烁(错乱)的几种方式及原理/</a>
+      <a href="http://tmac.wang/2017/08/AngularJS如何操作加载后动态生成的元素/" title="AngularJS如何操作加载后动态生成的元素">http://tmac.wang/2017/08/AngularJS如何操作加载后动态生成的元素/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -482,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/微信小程序时间轴/" rel="next" title="微信小程序时间轴">
-                <i class="fa fa-chevron-left"></i> 微信小程序时间轴
+              <a href="/2017/08/MAC日常抽风解决办法/" rel="next" title="MAC日常抽风解决办法">
+                <i class="fa fa-chevron-left"></i> MAC日常抽风解决办法
               </a>
             
           </div>
@@ -491,10 +497,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/MAC日常抽风解决办法/" rel="prev" title="MAC日常抽风解决办法">
-                MAC日常抽风解决办法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -623,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原因："><span class="nav-number">1.</span> <span class="nav-text">原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法："><span class="nav-number">2.</span> <span class="nav-text">解决方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-ng-bind"><span class="nav-number">2.1.</span> <span class="nav-text">1. ng-bind</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ng-cloak"><span class="nav-number">2.2.</span> <span class="nav-text">2. ng-cloak</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实例："><span class="nav-number">2.</span> <span class="nav-text">实例：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方法："><span class="nav-number">3.</span> <span class="nav-text">解决方法：</span></a></li></ol></div>
             
 
           </div>
