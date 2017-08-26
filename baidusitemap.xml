@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://tmac.wang/2017/08/AngularJS%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C%E5%8A%A0%E8%BD%BD%E5%90%8E%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E7%9A%84%E5%85%83%E7%B4%A0/</loc>
-    <lastmod>2017-08-26T03:57:57.000Z</lastmod>
+    <lastmod>2017-08-26T03:59:53.000Z</lastmod>
     <data>
         <display>
         <title>AngularJS如何操作加载后动态生成的元素</title>
@@ -168,9 +168,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>Godaddy</tag>
+         
+        <tag>技巧</tag>
          
          
            
@@ -225,16 +225,14 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        <title>技术点记录</title>
+        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
         
-        <tag>python</tag>
-         
-        <tag>mac</tag>
+        <tag>技巧</tag>
          
          
            
@@ -273,19 +271,19 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>技术点记录</title>
-        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
         
-        <tag>技巧</tag>
+        <tag>test</tag>
          
          
            
              
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
@@ -293,61 +291,16 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E9%97%B4%E8%BD%B4/</loc>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>微信小程序时间轴</title>
-        <pubTime>2017-06-21T15:55:42.000Z</pubTime>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
         
-        <tag>小程序</tag>
+        <tag>python</tag>
          
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>Framework7</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>git日常报错</title>
-        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>git</tag>
-         
-        <tag>coding</tag>
+        <tag>mac</tag>
          
          
            
@@ -382,19 +335,43 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
+        <title>git日常报错</title>
+        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
         
-        <tag>test</tag>
+        <tag>技巧</tag>
+         
+        <tag>git</tag>
+         
+        <tag>coding</tag>
          
          
            
              
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E9%97%B4%E8%BD%B4/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>微信小程序时间轴</title>
+        <pubTime>2017-06-21T15:55:42.000Z</pubTime>
+        
+        <tag>小程序</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
           
         </display>
     </data>
@@ -417,6 +394,28 @@
            
              
               <breadCrumb title="建站" url="http://tmac.wang/categories/%E5%BB%BA%E7%AB%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>Framework7</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
           
         </display>
     </data>
@@ -447,6 +446,7 @@
     </data>
     </url>
 
+    
     
     
 </urlset>
