@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[MAC日常抽风解决办法]]></title>
+      <url>%2F2017%2F08%2FMAC%E6%97%A5%E5%B8%B8%E6%8A%BD%E9%A3%8E%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
+      <content type="text"><![CDATA[一、外接显示器时笔记本屏幕无法点亮：MacBook Pro外接显示器时出现一下几种状况： 无论是否外接显示器笔记本屏幕无法点亮，敲击键盘偶尔闪现登录页面。 未外接显示器时屏幕只有在亮度调至最高时才能点亮。 单按电源键无反应。 command+control+电源键强制重启能正常启动。 原因及解决方法：原因是因为外接显示器时将外接屏幕作为了主屏幕，当拔掉外接显示器电脑休眠再启动时就会出现上述情况。解决方法就是去 电脑系统偏好设置 &gt; 显示器 &gt; 排列 将外接显示器上的白条拖拽移动到笔记本显示器的上方。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[解决AngularJS加载时页面闪烁(错乱)的几种方式及原理]]></title>
       <url>%2F2017%2F08%2F%E8%A7%A3%E5%86%B3AngularJS%E5%8A%A0%E8%BD%BD%E6%97%B6%E9%A1%B5%E9%9D%A2%E9%97%AA%E7%83%81(%E9%94%99%E4%B9%B1)%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%8E%9F%E7%90%86%2F</url>
       <content type="text"><![CDATA[原因：AngularJS 应用在加载时，文档可能会由于AngularJS 代码未加载完而出现显示 AngularJS 代码（如2），进而会有闪烁的问题，也就是在加载请求的时候页面会看到一瞬间的错乱。确切的说就是由于JavaScript去操作DOM，都会等待DOM加载完成（DOM ready）。同样AngularJS会在DOM ready之后才会去解析html view Template。页面错乱闪烁就是发生在AngularJS解析之前。专业名词叫：Flash of Unrendered Content ，简称FOUC。 解决方法：1. ng-bind用ng-bind将内容同元素绑定在一起避免这个问题。 1ng-bind 2. ng-cloakng-cloak 指令就是为了防止该问题而生。 1&lt;div ng-cloak&gt;&#123;&#123; 1 + 1 &#125;&#125;&lt;/div&gt; 页面内使用次数无限制，且无参数。 ng-cloak原理：ng-cloak实现原理为一个directive，在页面初始化时在DOM的head增加一行CSS代码，如下： 1&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\:form&#123;display:block;&#125;&lt;/style&gt; AngularJS将带有ng-cloak的元素设置为display：none。在等到AngularJS解析到带有ng-cloak节点的时候，会把元素上ng-cloak attribute和calss同时remove掉，这样就防止了节点的闪烁。查阅AngularJS源码可以在最后一行看到实现代码： 1!window.angular.$$csp() &amp;&amp; window.angular.element(document).find(&apos;head&apos;).prepend(&apos;&lt;style type=&quot;text/css&quot;&gt;@charset &quot;UTF-8&quot;;[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate)&#123;display:none !important;&#125;ng\\:form&#123;display:block;&#125;&lt;/style&gt;&apos;); 看上去问题已经解决了。但是！如果浏览器的速度比AngularJS在head中加入css的速度还快这方法就失效了。怎么办？那就事先手动把这些css加入我们的样式文件然后引入head里。]]></content>

@@ -312,6 +312,154 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/04/hexo日常报错维护/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qumuase">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qumuase">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/hexo日常报错维护/" itemprop="url">
+                  hexo日常报错维护
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-27T00:05:42+08:00">
+                2017-04-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/建站/" itemprop="url" rel="index">
+                    <span itemprop="name">建站</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>注：遇到报错应自行排查，或首先查看hexo官方问题解答板块内容（链接：<a href="https://hexo.io/zh-cn/docs/troubleshooting.html">hexo官方问题答疑</a>）。</p>
+<h4 id="意外的标记异常（1）"><a href="#意外的标记异常（1）" class="headerlink" title="意外的标记异常（1）"></a>意外的标记异常（1）</h4><p>1.异常内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">INFO  Deleted database.</div><div class="line">INFO  Start processing</div><div class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div><div class="line">FATAL (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/hexo日常报错维护/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/04/Laravel＋Vuejs实现Task增删改查功能（转）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1535,7 +1683,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1557,7 +1705,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
