@@ -410,7 +410,7 @@
       
         
           <h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p>jQuery中，动态生成的一个元素，想要进行后续操作，可通过<code>delegate／on／live</code>方法（在jquery3.0中已经废除了bind方法）。</p>
-<p>AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。</p>
+<p>AngularJS的事件监听机制针对的是已经生成的DOM进行操作，而在指令中动态生成的DOM节点或其他方式后添加的DOM，是不能被JS事件监听到。<br>换言之，非动态插入DOM的情况下，<code>ng-click</code>指令之所以生效，是因为AngularJS在编译阶段将绑定了<code>ng-click</code>的DOM绑定到了当前作用域。而在AngularJS编译阶段之后插入的DOM，当前作用域对于这个指令是未知的，所以不会生效。</p>
 <h4 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h4>
           <!--noindex-->
           <div class="post-button text-center">
