@@ -168,9 +168,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>Godaddy</tag>
+         
+        <tag>技巧</tag>
          
          
            
@@ -225,21 +225,21 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/04/hexo%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99%E7%BB%B4%E6%8A%A4/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        <title>hexo日常报错维护</title>
+        <pubTime>2017-04-26T16:05:42.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>技巧</tag>
          
-        <tag>mac</tag>
+        <tag>hexo</tag>
          
          
            
              
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+              <breadCrumb title="建站" url="http://tmac.wang/categories/%E5%BB%BA%E7%AB%99/"/>
           
         </display>
     </data>
@@ -295,14 +295,18 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>技术点记录</title>
-        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
+        <title>git日常报错</title>
+        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
         
         <tag>技巧</tag>
+         
+        <tag>git</tag>
+         
+        <tag>coding</tag>
          
          
            
@@ -335,18 +339,14 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
+    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>git日常报错</title>
-        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
+        <title>技术点记录</title>
+        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
         
         <tag>技巧</tag>
-         
-        <tag>git</tag>
-         
-        <tag>coding</tag>
          
          
            
@@ -400,27 +400,7 @@
     </url>
 
     
-  <url>
-    <loc>http://tmac.wang/2017/04/hexo%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99%E7%BB%B4%E6%8A%A4/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>hexo日常报错维护</title>
-        <pubTime>2017-04-26T16:05:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://tmac.wang/categories/%E5%BB%BA%E7%AB%99/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    
     
   <url>
     <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
@@ -446,7 +426,27 @@
     </url>
 
     
-    
+  <url>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
     
 </urlset>
