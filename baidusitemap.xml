@@ -169,9 +169,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>Godaddy</tag>
-         
         <tag>技巧</tag>
+         
+        <tag>Godaddy</tag>
          
          
            
@@ -226,14 +226,14 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E9%97%B4%E8%BD%B4/</loc>
+    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>微信小程序时间轴</title>
-        <pubTime>2017-06-21T15:55:42.000Z</pubTime>
+        <title>技术点记录</title>
+        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
         
-        <tag>小程序</tag>
+        <tag>技巧</tag>
          
          
            
@@ -314,14 +314,14 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/05/%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://tmac.wang/2017/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%B6%E9%97%B4%E8%BD%B4/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>技术点记录</title>
-        <pubTime>2017-05-02T10:06:42.000Z</pubTime>
+        <title>微信小程序时间轴</title>
+        <pubTime>2017-06-21T15:55:42.000Z</pubTime>
         
-        <tag>技巧</tag>
+        <tag>小程序</tag>
          
          
            
@@ -404,16 +404,16 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>技巧</tag>
          
-        <tag>mac</tag>
+        <tag>Framework7</tag>
          
          
            
@@ -427,16 +427,16 @@
     
     
   <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
         
-        <tag>技巧</tag>
+        <tag>python</tag>
          
-        <tag>Framework7</tag>
+        <tag>mac</tag>
          
          
            
