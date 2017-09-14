@@ -684,7 +684,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/05/小技巧点记录/">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/05/技巧点记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="qumuase">
@@ -706,7 +706,7 @@
             
               
                 
-                <a class="post-title-link" href="/2017/05/小技巧点记录/" itemprop="url">
+                <a class="post-title-link" href="/2017/05/技巧点记录/" itemprop="url">
                   技术点记录
                 </a>
               
@@ -776,7 +776,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  46 字
+                  105 字
                 </span>
               
 
@@ -811,11 +811,23 @@
 
       
         
-          
-            <h6 id="单选框取值问题"><a href="#单选框取值问题" class="headerlink" title="单选框取值问题"></a>单选框取值问题</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;)</div></pre></td></tr></table></figure>
-<p><code>$(&#39;.demo:checked&#39;)</code>会获取到input显式定义<code>checked || checked=&quot;checked&quot;</code>的选项，<code>$(&#39;.demo&#39;).is(&#39;:checked&#39;)</code>获取的是真正点击选中的选项。</p>
-
-          
+          <h5 id="angularJS监控页面加载完毕"><a href="#angularJS监控页面加载完毕" class="headerlink" title="angularJS监控页面加载完毕"></a>angularJS监控页面加载完毕</h5><ul>
+<li>controller内使用<code>watch</code>：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$scope.$on(&apos;$viewContentLoaded&apos;, function() &#123;  </div><div class="line">    console.log(&apos;加载完毕&apos;);  </div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>使用<code>data-ng-init</code>：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">视图文件内</div><div class="line">&lt;div ng-controller=&quot;Dom&quot;&gt;  </div><div class="line">     &lt;p data-ng-init=&quot;load()&quot;&gt;&lt;/p&gt;  </div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//controller内</div><div class="line">$scope.load = function()&#123;</div><div class="line">      console.log(&apos;加载完毕&apos;);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/技巧点记录/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

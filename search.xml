@@ -88,8 +88,8 @@
     
     <entry>
       <title><![CDATA[技术点记录]]></title>
-      <url>%2F2017%2F05%2F%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
+      <url>%2F2017%2F05%2F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[angularJS监控页面加载完毕 controller内使用watch： 123$scope.$on(&apos;$viewContentLoaded&apos;, function() &#123; console.log(&apos;加载完毕&apos;); &#125;); 使用data-ng-init： 1234视图文件内&lt;div ng-controller=&quot;Dom&quot;&gt; &lt;p data-ng-init=&quot;load()&quot;&gt;&lt;/p&gt; &lt;/div&gt; 1234//controller内$scope.load = function()&#123; console.log(&apos;加载完毕&apos;); &#125; jquery单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
     </entry>
 
     
