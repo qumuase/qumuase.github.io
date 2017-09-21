@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[ErrorLevelAnalysis--ELA(错误级别分析)图片技术详解]]></title>
+      <url>%2F2017%2F09%2FErrorLevelAnalysis--ELA(%E9%94%99%E8%AF%AF%E7%BA%A7%E5%88%AB%E5%88%86%E6%9E%90)%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
+      <content type="text"><![CDATA[薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤这样的网络新名词。针对方法晒图的真伪性吃瓜群众中也出现了两类热心派：一类就是设计师群体通过高斯等 PhotoShop 专业手法判断双方图片真伪，另外一类就是工程师通过专业技术手段来进行的分析。主要技术就是这篇文章要说的 ErrorLevelAnalysis ，简写 ELA ，汉译为“错误级别分析”或者叫“误差分析”技术。今天也蹭蹭热点看看这个 ELA 在图片压缩过程中到底是个什么样角色。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[MAC主要下载工具分析对比]]></title>
       <url>%2F2017%2F09%2FMAC%E4%B8%BB%E8%A6%81%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%88%86%E6%9E%90%E5%AF%B9%E6%AF%94%2F</url>
       <content type="text"><![CDATA[You-Get 官方项目主页：https://github.com/soimort/you-getYou-Get 官网：https://you-get.org/You-Get 官方中文说明：https://github.com/soimort/you-get/wiki/中文说明/ 命令行工具 支持主流网站下载 免费 可配置（-c 添加cookie 下载会员清晰度视频） 1234567891011you-get https://www.bilibili.com/video/av14221434/site: Bilibilititle: 【ACI字幕组】空中浩劫S17E07:复兴航空235号班机(中英双语 首发V2）stream: - format: mp4 container: mp4 size: 314.1 MiB (329310578 bytes) # download-with: you-get --format=mp4 [URL]Downloading 【ACI字幕组】空中浩劫S17E07-复兴航空235号班机(中英双语 首发V2）.mp4 ...15.5% ( 48.8/314.1MB) ├███████████──────────────────────────────────────────────────────────────┤[1/1] 3 MB/s Downie Downie 官网：https://software.charliemonroe.net/downie.php官方五折（50% off）优惠码C5AE418A（请自行验证有效性） 客户端工具 拖拽下载 支持1300+网站下载，包含某些成人网站 查看热门 收费$19.99 youtube-dl youtube-dl 官网：https://rg3.github.io/youtube-dl/ Aria2Folx GO+迅雷忽略 更新中]]></content>
