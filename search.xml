@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[ErrorLevelAnalysis--ELA(错误级别分析)图片技术详解]]></title>
       <url>%2F2017%2F09%2FErrorLevelAnalysis--ELA(%E9%94%99%E8%AF%AF%E7%BA%A7%E5%88%AB%E5%88%86%E6%9E%90)%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-      <content type="text"><![CDATA[薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。 ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。 图像误差水平分析是一种技术，可以通过检测以特定压缩率重新绘制图像后引入的误差分布，帮助识别压缩（JPEG）图像的操作。 维基百科 如此定义：ELA是使用JPEG等有损压缩的数字数据中的压缩影像进行分析。 更新中。。。 拓展： https://29a.ch/ 也有其他关于图像处理的技术，比如：自动化图像裁剪主题区域(非暴力裁剪中心区域)的 smartcrop.js介绍页 | 示例页 | 测试页 | GitHub图片滤镜 Film Emulator测试页 | GitHub 123参考资料：· https://29a.ch/· https://en.wikipedia.org/wiki/Error_level_analysis]]></content>
+      <content type="text"><![CDATA[薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。 ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。ELA通过检测特定压缩比率重新绘制图像后造成的误差分布，可用于识别JPEG图像的压缩。 维基百科 如此定义：ELA是使用JPEG等有损压缩的数字数据中的压缩影像进行分析。 更新中。。。 拓展： https://29a.ch/ 也有其他关于图像处理的技术，比如：自动化图像裁剪主题区域(非暴力裁剪中心区域)的 smartcrop.js介绍页 | 示例页 | 测试页 | GitHub图片滤镜 Film Emulator测试页 | GitHub 1234参考资料：· https://29a.ch/· http://fotoforensic.com/· https://en.wikipedia.org/wiki/Error_level_analysis]]></content>
     </entry>
 
     

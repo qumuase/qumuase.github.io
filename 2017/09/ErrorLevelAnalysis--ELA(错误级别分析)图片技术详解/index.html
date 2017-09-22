@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://tmac.wang/2017/09/ErrorLevelAnalysis--ELA(错误级别分析)图片技术详解/index.html">
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什">
-<meta property="og:updated_time" content="2017-09-22T05:17:36.000Z">
+<meta property="og:updated_time" content="2017-09-22T06:58:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ErrorLevelAnalysis--ELA(错误级别分析)图片技术详解">
 <meta name="twitter:description" content="薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什">
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  376 字
+                  364 字
                 </span>
               
 
@@ -459,10 +459,9 @@
       
 
       
-        <p>薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。<br>时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于<code>求锤得锤</code>、<code>你再和人家做X怎么办？我就跳轨</code>这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：<br>一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。<br>ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。</p>
+        <p>薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。<br>时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于<code>求锤得锤</code>、<code>你再和人家做X怎么办？我就跳轨</code>这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。<br>ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。</p>
 <a id="more"></a>
-<p>ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。</p>
-<p>图像误差水平分析是一种技术，可以通过检测以特定压缩率重新绘制图像后引入的误差分布，帮助识别压缩（JPEG）图像的操作。</p>
+<p>ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。<br>ELA通过检测特定压缩比率重新绘制图像后造成的误差分布，可用于识别JPEG图像的压缩。</p>
 <p><a href="https://en.wikipedia.org/wiki/Error_level_analysis" target="_blank" rel="external">维基百科</a> 如此定义：ELA是使用JPEG等有损压缩的数字数据中的压缩影像进行分析。</p>
 <hr>
 <p>更新中。。。</p>
@@ -470,7 +469,7 @@
 <p>拓展：</p>
 <p><a href="https://29a.ch/" target="_blank" rel="external">https://29a.ch/</a> 也有其他关于图像处理的技术，比如：<br>自动化图像裁剪主题区域(非暴力裁剪中心区域)的 smartcrop.js<br><a href="https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping" target="_blank" rel="external">介绍页</a> | <a href="https://29a.ch/sandbox/2014/smartcrop/examples/testsuite.html" target="_blank" rel="external">示例页</a> | <a href="">测试页</a> | <a href="https://github.com/jwagner/smartcrop.js/" target="_blank" rel="external">GitHub</a><br>图片滤镜 Film Emulator<br><a href="https://29a.ch/film-emulator/" target="_blank" rel="external">测试页</a> | <a href="https://github.com/jwagner/analog-film-emulator" target="_blank" rel="external">GitHub</a></p>
 <hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">参考资料：</div><div class="line">· https://29a.ch/</div><div class="line">· https://en.wikipedia.org/wiki/Error_level_analysis</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">参考资料：</div><div class="line">· https://29a.ch/</div><div class="line">· http://fotoforensic.com/</div><div class="line">· https://en.wikipedia.org/wiki/Error_level_analysis</div></pre></td></tr></table></figure>
 <hr>
 
       
