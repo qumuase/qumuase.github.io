@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[ErrorLevelAnalysis--ELA(错误级别分析)图片技术详解]]></title>
       <url>%2F2017%2F09%2FErrorLevelAnalysis--ELA(%E9%94%99%E8%AF%AF%E7%BA%A7%E5%88%AB%E5%88%86%E6%9E%90)%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-      <content type="text"><![CDATA[薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。 ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。 先来看看维基百科是怎么定义的。维基百科 ELA(错误级别分析)是使用JPEG等有损压缩的数字数据中的压缩伪影进行分析。 更新中。。。]]></content>
+      <content type="text"><![CDATA[薛之谦事件炒的实在是精彩，时间战线拉的也是够长，颇有一番你方唱罢我登场的意思。时间爆料发展过程中吃瓜群众是看的过瘾，也新出了类似于求锤得锤、你再和人家做X怎么办？我就跳轨这样的热门网络梗。同时针对方法晒图的真伪性吃瓜群众也是不甘只为局外人，出现了两类热心派：一类通过图片放大、降低亮度、高斯、文字大小对比等 PhotoShop 手法判断双方图片真伪，另外一类通过ELA技术来进行对比分析。ELA 是什么，很多人比较陌生，本篇文章就简单的介绍一下。 ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。 维基百科 如此定义：ELA(错误级别分析)是使用JPEG等有损压缩的数字数据中的压缩伪影进行分析。 更新中。。。 拓展： https://29a.ch/ 也有其他关于图像处理的技术，比如：自动化图像裁剪主题区域(非暴力裁剪中心区域)的 smartcrop.js介绍页 | 示例页 | 测试页 | GitHub图片滤镜 Film Emulator测试页 | GitHub 123参考资料：· https://29a.ch/· https://en.wikipedia.org/wiki/Error_level_analysis]]></content>
     </entry>
 
     
@@ -96,7 +96,7 @@
     <entry>
       <title><![CDATA[技术点记录]]></title>
       <url>%2F2017%2F05%2F%E6%8A%80%E5%B7%A7%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[#####Element.scrollIntoView()与Element.scrollIntoViewIfNeeded() 123element.scrollIntoView(); // 等同于element.scrollIntoView(true) element.scrollIntoView(alignToTop); // Boolean型参数 element.scrollIntoView(scrollIntoViewOptions); // Object型参数 angularJS监控页面加载完毕 controller内使用watch： 123$scope.$on(&apos;$viewContentLoaded&apos;, function() &#123; console.log(&apos;加载完毕&apos;); &#125;); 使用data-ng-init： 1234视图文件内&lt;div ng-controller=&quot;Dom&quot;&gt; &lt;p data-ng-init=&quot;load()&quot;&gt;&lt;/p&gt; &lt;/div&gt; 1234//controller内$scope.load = function()&#123; console.log(&apos;加载完毕&apos;); &#125; jquery单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
+      <content type="text"><![CDATA[#####Element.scrollIntoView()与Element.scrollIntoViewIfNeeded()123element.scrollIntoView(); // 等同于element.scrollIntoView(true) element.scrollIntoView(alignToTop); // Boolean型参数 element.scrollIntoView(scrollIntoViewOptions); // Object型参数 angularJS监控页面加载完毕 controller内使用watch： 123$scope.$on(&apos;$viewContentLoaded&apos;, function() &#123; console.log(&apos;加载完毕&apos;); &#125;); 使用data-ng-init： 1234视图文件内&lt;div ng-controller=&quot;Dom&quot;&gt; &lt;p data-ng-init=&quot;load()&quot;&gt;&lt;/p&gt; &lt;/div&gt; 1234//controller内$scope.load = function()&#123; console.log(&apos;加载完毕&apos;); &#125; jquery单选框取值问题1$(&apos;.demo&apos;).is(&apos;:checked&apos;)与$(&apos;.demo:checked&apos;) $(&#39;.demo:checked&#39;)会获取到input显式定义checked || checked=&quot;checked&quot;的选项，$(&#39;.demo&#39;).is(&#39;:checked&#39;)获取的是真正点击选中的选项。]]></content>
     </entry>
 
     
