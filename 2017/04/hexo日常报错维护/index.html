@@ -102,7 +102,7 @@
 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051INFO  Deleted database.INFO  Start proc">
 <meta property="og:image" content="http://images.43px.com/QQ20170923-155812@2x.png">
 <meta property="og:image" content="http://images.43px.com/QQ20170923-155915@2x.png">
-<meta property="og:updated_time" content="2017-09-23T08:08:50.000Z">
+<meta property="og:updated_time" content="2017-09-23T08:45:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo日常报错维护">
 <meta name="twitter:description" content="注：遇到报错应自行排查，或首先查看hexo官方问题解答板块内容（链接：hexo官方问题答疑）。
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,729 字
+                  1,793 字
                 </span>
               
 
@@ -450,7 +450,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  9 分钟
+                  10 分钟
                 </span>
               
             </div>
@@ -498,8 +498,44 @@
 <p>3.解决方法</p>
 <p>重启iTerm</p>
 <h4 id="sitemap报错"><a href="#sitemap报错" class="headerlink" title="sitemap报错"></a>sitemap报错</h4><p>1.打开网站 sitemap.xml 报错信息如下：<br><img src="http://images.43px.com/QQ20170923-155812@2x.png" alt=""></p>
-<p>2.原因<br>在GitHub中查看 sitemap.xml 发现以下问题：<br><img src="http://images.43px.com/QQ20170923-155915@2x.png" alt=""><br>同时在Xcode中打开本地 sitemap.xml 文件此位置同样是加红报错状态。</p>
-<p>3.解决方法<br>把 对应这篇文章的标题及title中的 <code>&amp;</code> 符号替换为其他文字即可。</p>
+<p>2.原因<br>在GitHub中查看 sitemap.xml 发现以下问题：<br><img src="http://images.43px.com/QQ20170923-155915@2x.png" alt=""><br>同时在Xcode中打开本地 sitemap.xml 文件此位置同样是加红报错状态。<br>这是由于特殊符号在 xml 文件中是不能显示且会报错，需要经过转义字符来进行特殊处理。</p>
+<p>3.解决方法<br>把 <code>source/_posts/</code> 下对应文章的标题及title中的 <code>&amp;</code> 等特殊符号替换为转义字符 <code>&amp;amp;</code> 等即可。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">特殊符号</th>
+<th style="text-align:center">对应编码</th>
+<th style="text-align:center">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">\&lt;</td>
+<td style="text-align:center">小于</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">\&gt;</td>
+<td style="text-align:center">大于</td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">\&amp;</td>
+<td style="text-align:center">和</td>
+</tr>
+<tr>
+<td style="text-align:center">‘</td>
+<td style="text-align:center">\&apos;</td>
+<td style="text-align:center">单引号</td>
+</tr>
+<tr>
+<td style="text-align:center">“</td>
+<td style="text-align:center">\&quot;</td>
+<td style="text-align:center">双引号</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
