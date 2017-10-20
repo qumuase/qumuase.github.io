@@ -370,9 +370,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>Godaddy</tag>
+         
+        <tag>技巧</tag>
          
          
            
@@ -393,6 +393,31 @@
         <pubTime>2017-05-14T13:40:42.000Z</pubTime>
         
         <tag>技术相关</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>git日常报错</title>
+        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>git</tag>
+         
+        <tag>coding</tag>
          
          
            
@@ -427,18 +452,36 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>git日常报错</title>
-        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
         
         <tag>技巧</tag>
          
-        <tag>git</tag>
-         
-        <tag>coding</tag>
+        <tag>Framework7</tag>
          
          
            
@@ -490,49 +533,6 @@
            
              
               <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>Framework7</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
