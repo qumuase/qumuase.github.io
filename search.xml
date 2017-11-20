@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Vue2实战要点记录]]></title>
       <url>%2F2017%2F11%2FVue2%E5%AE%9E%E6%88%98%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[#####Vue 深拷贝原始数据由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(...)) 的方式复制一份数据进行操作。]]></content>
+      <content type="text"><![CDATA[Vue 深拷贝原始数据由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(...)) 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。]]></content>
     </entry>
 
     
