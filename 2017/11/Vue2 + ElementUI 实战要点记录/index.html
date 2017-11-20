@@ -98,7 +98,7 @@ ElementUI 的 Dialog 对话框监听Dialog 方面，由于目前 ElementUI 2.0�
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="Vue 深拷贝原始数据由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(...)) 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。
 ElementUI 的 Dialog 对话框监听Dialog 方面，由于目前 ElementUI 2.0版本是在页面加">
-<meta property="og:updated_time" content="2017-11-20T14:48:41.000Z">
+<meta property="og:updated_time" content="2017-11-20T14:51:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue2 + ElementUI 实战要点记录">
 <meta name="twitter:description" content="Vue 深拷贝原始数据由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(...)) 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。
@@ -464,6 +464,7 @@ ElementUI 的 Dialog 对话框监听Dialog 方面，由于目前 ElementUI 2.0�
       
         <h5 id="Vue-深拷贝原始数据"><a href="#Vue-深拷贝原始数据" class="headerlink" title="Vue 深拷贝原始数据"></a>Vue 深拷贝原始数据</h5><p>由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 <code>JSON.parse(JSON.stringify(...))</code> 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。</p>
 <h5 id="ElementUI-的-Dialog-对话框监听"><a href="#ElementUI-的-Dialog-对话框监听" class="headerlink" title="ElementUI 的 Dialog 对话框监听"></a>ElementUI 的 Dialog 对话框监听</h5><p>Dialog 方面，由于目前 ElementUI 2.0版本是在页面加载时直接将需要用到的所有 Dialog 生成好然后 hide 掉，切换状态时只是执行了 show/hide 操作，而并非销毁及重新生成，所以在数据的监听更新上会可能存在只有首次才能触发到的问题，处理办法之一就是监听影响对话框显示隐藏的属性，如官方示例中的 <code>dialogVisible</code> ，进而执行对话框显示时的数据更新等操作。</p>
+<a id="more"></a>
 
       
     </div>
