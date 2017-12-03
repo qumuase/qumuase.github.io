@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Linode IP 被墙后的更换 IP 之路]]></title>
+      <url>%2F2017%2F12%2FLinode%20IP%20%E8%A2%AB%E5%A2%99%E5%90%8E%E7%9A%84%E6%9B%B4%E6%8D%A2%20IP%20%E4%B9%8B%E8%B7%AF%2F</url>
+      <content type="text"><![CDATA[修改端口首先应该尝试修改端口，可能仅仅只是端口被封了。 原有修改 IP 的途径网上的帖子全都是很久之前的方法了，基本上解决方法全都是开一个 ticket，联系客服直接更换一个 IP。殊不知现在这种方式已经行不通了。现在由于 GFW 的原因需要修改 IP 的问题已经被列为热门问题了，且描述中明确说明了不再为这种原因的客户修改 IP。 下面这张图是新版 Linode 客服中心的热门问题截图，可以看到解决方式还是原来的方式，尝试用这种方式联系客服被告知已经不可行。这应该只是新版内容同步问题：可以看到之前只需要添加两个 MTR 的网络诊断报告即可更换 IP。 现今修改方式 1、联系客服添加一个 IP，1$/m。2、同区下新添加一个实例，然后把原有数据迁移至新实例下。3、联系客服更换至其他区，比如日本迁至新加坡或者美西弗里蒙特（Fremont）。4、直接删除实例重新购买，如果当前实例下没有重要文件的话。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[各平台安装使用 MTR 诊断网络]]></title>
       <url>%2F2017%2F12%2F%E5%90%84%E5%B9%B3%E5%8F%B0%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%20MTR%20%E8%AF%8A%E6%96%AD%E7%BD%91%E7%BB%9C%2F</url>
       <content type="text"><![CDATA[下载、安装macOS：一种方式：下载地址：http://rudix.org/packages/mtr.html根据自己系统版本下载对应的 MTR 版本安装即可。另外一种方式：使用 brew 在线安装： 1brew install mtr Ubuntu：123apt-get updateapt-get upgradeapt-get install mtr-tiny CentOS：12yum updateyum install mtr Windows：手动下载安装 http://winmtr.net/ 运行 cd 到 /usr/local/sbin ，ls即可看到 mtr，直接键入 mtr 即可运行。注：mtr 需要 root 权限，报错时尝试添加 root 权限。 运行结果 可查看循环次数下的丢包率、最慢、最快、平均时长及差值等数据。]]></content>
