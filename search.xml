@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Vue2 要点记录]]></title>
+      <url>%2F2017%2F12%2FVue2%20%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[Vue 函数调用 this 问题在函数内调用全局 this 的方法时，this 的指向已经发生了变化，此时只需将函数改为箭头函数即可。 1234567//报错disabledDate(time) &#123; this.$message(&#123; message: &apos;请选择今天之前的日期！&apos;, type: &apos;warning&apos; &#125;);&#125; 1234567//正解disabledDate: (time) =&gt; &#123; this.$message(&#123; message: &apos;请选择今天之前的日期！&apos;, type: &apos;warning&apos; &#125;);&#125;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Linode IP 被墙后的更换 IP 之路]]></title>
       <url>%2F2017%2F12%2FLinode%20IP%20%E8%A2%AB%E5%A2%99%E5%90%8E%E7%9A%84%E6%9B%B4%E6%8D%A2%20IP%20%E4%B9%8B%E8%B7%AF%2F</url>
       <content type="text"><![CDATA[修改端口首先应该尝试修改端口，可能仅仅只是端口被封了。 原有修改 IP 的途径网上的帖子全都是很久之前的方法了，基本上解决方法全都是开一个 ticket，联系客服直接更换一个 IP。殊不知现在这种方式已经行不通了。现在由于 GFW 的原因需要修改 IP 的问题已经被列为热门问题了，且描述中明确说明了不再为这种原因的客户修改 IP。 下面这张图是新版 Linode 客服中心的热门问题截图，可以看到解决方式还是原来的方式，尝试用这种方式联系客服被告知已经不可行。这应该只是新版内容同步问题：可以看到之前只需要添加两个 MTR 的网络诊断报告即可更换 IP。 现今修改方式 1、联系客服添加一个 IP，1$/m。2、同区下新添加一个实例，然后把原有数据迁移至新实例下。3、联系客服更换至其他区，比如日本迁至新加坡或者美西弗里蒙特（Fremont）。4、直接删除实例重新购买，如果当前实例下没有重要文件的话。]]></content>
@@ -20,13 +27,6 @@
       <title><![CDATA[基于 Vue2.0 + Element 的单页面可视化开发实践]]></title>
       <url>%2F2017%2F11%2F%E5%9F%BA%E4%BA%8E%20Vue2.0%20%2B%20ElementUI%20%E7%9A%84%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5%2F</url>
       <content type="text"><![CDATA[需求项目迭代，要重构出一个可供用户操作的，可自由选择模板，可定制内容的页面。相当于这个单页面上最终展示的所有内容，都是由用户自己去定制完成的。细想之后觉得使用 Vue 来做比较合适，因为页面上大部分操作都可理解为是对总体数据的再排序编辑。下边是记录的开发过程中一些相对关键的问题。 Vue 原始数据的深复制由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(…)) 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。 默认数据与已编辑数据的分离最开始做的时候未考虑到这个问题，使用了简单粗暴的方法调取默认数据，即在进入页面的时候复制一份数据充当默认数据。之后发现这个会导致用户操作数据后默认数据也跟着改变的问题。良好的解决方法就是相互分离，全部都是独立请求。 Element 的 Dialog 对话框监听Dialog 方面，由于目前 Element 2.0版本是在页面加载时直接将需要用到的所有 Dialog 生成好然后 hide 掉，切换状态时只是执行了 show/hide 操作，考虑到复用性问题，并非销毁及重新生成，所以在数据的监听更新上会可能存在只有首次才能触发到的问题，处理办法之一就是监听影响对话框显示隐藏的属性，如官方示例中的 dialogVisible ，进而执行对话框显示时的数据更新等操作。 本地开发的数据请求跨域问题一方面可通过 webpack-dev-server 添加配置 disableHostCheck: true 来修改它的默认查找 hostname 的行为。也可以配置config &gt; index.js 下 proxyTable 来解决此问题。 123456789proxyTable: &#123; &apos;/api&apos;: &#123; target: &apos;http://api.x.com&apos;, changeOrigin: true, pathRewrite: &#123; &apos;^/api&apos;: &apos;/api&apos; &#125; &#125;&#125; 另：Vue-CLI 的功能是其使用了 http-proxy-middleware 插件github：https://github.com/chimurai/http-proxy-middleware 数据的存储调取使用 localstorage 来存储用于区分身份的 ID，根据不同 ID 使用 axios 来进行服务端的数据请求。如果牵涉跨域是需要添加 JSONP 模块的。链接：https://github.com/axios/axios/blob/master/COOKBOOK.md#jsonp 待改进 未使用 Vue 懒加载，由于操作逻辑的复杂性，首页所有的 JS 文件将近800 KB ，如果以后迭代功能 JS 文件还可能更大，可能会有更大的 JS 文件，结果可能会导致首次加载等待时间较长，所以理想状态下是考虑加入懒加载，按需加载 JS 提前规划。 未使用 Vuex，目前组件间的数据通讯全都是通过 prop 传参的形式实现的。虽然目前组件间还不存在大范围共享数据的问题，但是引入 Vuex 进行数据处理还是很有必要的。随着项目的复杂化推进目前组件间的传参会越来越显的笨重。 在最后以上要点是整个首页项目提取出来的一些关键性问题，随着第一个Vue 项目的告一段落，不得不感叹数据驱动型真是简单、便捷、高效。相比之前 jQuery 的查找、绑定 DOM 而后再渲染确实完全没法比。尝试新事物总是让人兴奋不止。 补充中。。。 如有问题，欢迎指正！]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[Vue2 + ElementUI 实战要点记录]]></title>
-      <url>%2F2017%2F11%2FVue2%20%2B%20ElementUI%20%E5%AE%9E%E6%88%98%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[Vue 深拷贝原始数据由于 JS 对象的引用类型特点，在一些不需要双向绑定数据的时候，需要通过深拷贝原始的数据对象来暂存数据，即用 JSON.parse(JSON.stringify(...)) 的方式复制一份数据来进行操作。一般情况下组件间的数据干扰等情况都是由于此问题导致的。 ElementUI 的 Dialog 对话框监听Dialog 方面，由于目前 ElementUI 2.0版本是在页面加载时直接将需要用到的所有 Dialog 生成好然后 hide 掉，切换状态时只是执行了 show/hide 操作，而并非销毁及重新生成，所以在数据的监听更新上会可能存在只有首次才能触发到的问题，处理办法之一就是监听影响对话框显示隐藏的属性，如官方示例中的 dialogVisible ，进而执行对话框显示时的数据更新等操作。]]></content>
     </entry>
 
     
