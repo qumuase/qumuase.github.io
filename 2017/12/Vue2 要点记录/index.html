@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="Vue 函数调用 this 问题在函数内调用全局 this 的方法时，this 的指向已经发生了变化，此时只需将函数改为箭头函数即可。
 1234567//报错disabledDate(time) &amp;#123;    this.$message(&amp;#123;        message: &amp;apos;请选择今天之前的日期！&amp;apos;,        type: &amp;apos;warning&amp;apo">
-<meta property="og:updated_time" content="2017-12-14T01:40:54.093Z">
+<meta property="og:updated_time" content="2017-12-14T01:52:52.557Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue2 要点记录">
 <meta name="twitter:description" content="Vue 函数调用 this 问题在函数内调用全局 this 的方法时，this 的指向已经发生了变化，此时只需将函数改为箭头函数即可。
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  90 字
+                  114 字
                 </span>
               
 
@@ -465,6 +465,7 @@
         <h5 id="Vue-函数调用-this-问题"><a href="#Vue-函数调用-this-问题" class="headerlink" title="Vue 函数调用 this 问题"></a>Vue 函数调用 this 问题</h5><p>在函数内调用全局 this 的方法时，this 的指向已经发生了变化，此时只需将函数改为箭头函数即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//报错</div><div class="line">disabledDate(time) &#123;</div><div class="line">    this.$message(&#123;</div><div class="line">        message: &apos;请选择今天之前的日期！&apos;,</div><div class="line">        type: &apos;warning&apos;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//正解</div><div class="line">disabledDate: (time) =&gt; &#123;</div><div class="line">    this.$message(&#123;</div><div class="line">        message: &apos;请选择今天之前的日期！&apos;,</div><div class="line">        type: &apos;warning&apos;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是由于箭头函数内部的 this 是词法作用域，由上下文确定。</p>
 <p>更新中。。。<br><a id="more"></a></p>
 
       
