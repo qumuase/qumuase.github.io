@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[wordpress权限及后台FTP登录失败问题解决方法]]></title>
+      <title><![CDATA[webpack 打包压缩 ES6文件报错 UglifyJs + Unexpected token punc (()]]></title>
       <url>%2F2018%2F01%2Fwebpack%20%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%20ES6%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99%20UglifyJs%20%2B%20Unexpected%20token%20punc%20(()%2F</url>
       <content type="text"><![CDATA[报错信息1234ERROR in static/js/app.cc5c533156716b3e128a.js from UglifyJsUnexpected token: punc (() [static/js/app.cc5c533156716b3e128a.js:187,9] Build failed with errors. 原因目录下缺少 .babelrc 文件，无法编译 ES6 代码。 方法方法一添加并配置此文件即可。Babel 是将 ES6 代码转为 ES5 代码的转码器，.babelrc 就是 Babel 的配置文件。规则如： 123456789101112131415161718&#123; &quot;presets&quot;: [ [&quot;env&quot;, &#123; &quot;modules&quot;: false, &quot;targets&quot;: &#123; &quot;browsers&quot;: [&quot;&gt; 1%&quot;, &quot;last 2 versions&quot;, &quot;not ie &lt;= 8&quot;] &#125; &#125;], &quot;stage-2&quot; ], &quot;plugins&quot;: [&quot;transform-runtime&quot;], &quot;env&quot;: &#123; &quot;test&quot;: &#123; &quot;presets&quot;: [&quot;env&quot;, &quot;stage-2&quot;], &quot;plugins&quot;: [&quot;istanbul&quot;] &#125; &#125;&#125; 方法二可使用 npm 或 yarn 安装 babel-cli 进行命令行转码。 更多 babel 相关知识可查看 http://www.ruanyifeng.com/blog/2016/01/babel.html 。]]></content>
     </entry>
