@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[wordpress权限及后台FTP登录失败问题解决方法]]></title>
+      <url>%2F2018%2F01%2Fwordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E7%9A%84%E5%89%AF%E6%9C%AC%2F</url>
+      <content type="text"><![CDATA[在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。 在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码: 123define(&quot;FS_METHOD&quot;, &quot;direct&quot;);define(&quot;FS_CHMOD_DIR&quot;, 0777);define(&quot;FS_CHMOD_FILE&quot;, 0777); 抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限： 1sudo chmod -R 777 yourfolder/ 当然，严格意义上讲这样是不安全的。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Vue2 要点记录]]></title>
       <url>%2F2017%2F12%2FVue2%20%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
       <content type="text"><![CDATA[Vue 函数调用 this 问题在函数内调用全局 this 的方法时，this 的指向已经发生了变化，此时只需将函数改为箭头函数即可。 1234567//报错disabledDate(time) &#123; this.$message(&#123; message: &apos;请选择今天之前的日期！&apos;, type: &apos;warning&apos; &#125;);&#125; 1234567//正解disabledDate: (time) =&gt; &#123; this.$message(&#123; message: &apos;请选择今天之前的日期！&apos;, type: &apos;warning&apos; &#125;);&#125; 这是由于箭头函数内部的 this 是词法作用域，由上下文确定。 更新中。。。]]></content>
@@ -188,13 +195,6 @@
       <title><![CDATA[python3-3.5.1 already installed, it's just not linked]]></title>
       <url>%2F2016%2F04%2Fpython3-3.5.1%20already%20installed%2C%20it's%20just%20not%20linked%2F</url>
       <content type="text"><![CDATA[mac安装python3版本之后无法启动，运行下面一下代码即可： 1sudo ln -s /Library/Frameworks/Python.framework/Versions/3.4/bin/python3 /usr/local/bin/python3]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[wordpress权限及后台FTP登录失败问题解决方法]]></title>
-      <url>%2F2016%2F02%2Fwordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E7%9A%84%E5%89%AF%E6%9C%AC%2F</url>
-      <content type="text"><![CDATA[在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。 在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码: 123define(&quot;FS_METHOD&quot;, &quot;direct&quot;);define(&quot;FS_CHMOD_DIR&quot;, 0777);define(&quot;FS_CHMOD_FILE&quot;, 0777); 抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限： 1sudo chmod -R 777 yourfolder/ 当然，严格意义上讲这样是不安全的。]]></content>
     </entry>
 
     

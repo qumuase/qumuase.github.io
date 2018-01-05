@@ -332,6 +332,184 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/04/hexo日常报错维护/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qumuase">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qumuase">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/hexo日常报错维护/" itemprop="url">
+                  hexo日常报错维护
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-27T00:05:42+08:00">
+                2017-04-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/建站/" itemprop="url" rel="index">
+                    <span itemprop="name">建站</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  1,793 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  10 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>注：遇到报错应自行排查，或首先查看hexo官方问题解答板块内容（链接：<a href="https://hexo.io/zh-cn/docs/troubleshooting.html">hexo官方问题答疑</a>）。</p>
+<h4 id="意外的标记异常（1）"><a href="#意外的标记异常（1）" class="headerlink" title="意外的标记异常（1）"></a>意外的标记异常（1）</h4><p>1.异常内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">INFO  Deleted database.</div><div class="line">INFO  Start processing</div><div class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div><div class="line">FATAL (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">Template render error: (unknown path) [Line 3, Column 198]</div><div class="line">  unexpected token: &#125;&#125;</div><div class="line">    at Object.exports.prettifyError (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/lib.js:34:15)</div><div class="line">    at new_cls.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:469:27)</div><div class="line">    at new_cls.renderString (/Users/a001/GitHub/qumuase.github.io/node_modules/.2.5.2@nunjucks/src/environment.js:327:21)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:66:9</div><div class="line">    at Promise._execute (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/debuggability.js:300:9)</div><div class="line">    at Promise._resolveFromExecutor (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:481:18)</div><div class="line">    at new Promise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:77:14)</div><div class="line">    at Tag.render (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/extend/tag.js:64:10)</div><div class="line">    at Object.tagFilter [as onRenderEnd] (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/post.js:253:16)</div><div class="line">    at /Users/a001/GitHub/qumuase.github.io/node_modules/.3.2.2@hexo/lib/hexo/render.js:65:19</div><div class="line">    at tryCatcher (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:510:31)</div><div class="line">    at Promise._settlePromise (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:567:18)</div><div class="line">    at Promise._settlePromise0 (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:612:10)</div><div class="line">    at Promise._settlePromises (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/promise.js:691:18)</div><div class="line">    at Async._drainQueue (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:133:16)</div><div class="line">    at Async._drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:143:10)</div><div class="line">    at Immediate.Async.drainQueues (/Users/a001/GitHub/qumuase.github.io/node_modules/.3.4.7@bluebird/js/release/async.js:17:14)</div><div class="line">    at runCallback (timers.js:574:20)</div><div class="line">    at tryOnImmediate (timers.js:554:5)</div><div class="line">    at processImmediate [as _immediateCallback] (timers.js:533:5)</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/hexo日常报错维护/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://tmac.wang/2017/04/Laravel＋Vuejs实现Task增删改查功能（转）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1532,185 +1710,6 @@
           
             <p>mac安装python3版本之后无法启动，运行下面一下代码即可：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /Library/Frameworks/Python.framework/Versions/3.4/bin/python3 /usr/local/bin/python3</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2016/02/wordpress权限及后台FTP登录失败问题解决方法的副本/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qumuase">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="qumuase">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/wordpress权限及后台FTP登录失败问题解决方法的副本/" itemprop="url">
-                  wordpress权限及后台FTP登录失败问题解决方法
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-27T20:06:42+08:00">
-                2016-02-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/建站/" itemprop="url" rel="index">
-                    <span itemprop="name">建站</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计</span>
-                
-                <span title="字数统计">
-                  206 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ol>
-<li>在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。<br><img src="http://images.43px.com/QQ%E6%88%AA%E5%9B%BE20160301231927.png" alt="wordpress"></li>
-<li>在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(&quot;FS_METHOD&quot;, &quot;direct&quot;);</div><div class="line">define(&quot;FS_CHMOD_DIR&quot;, 0777);</div><div class="line">define(&quot;FS_CHMOD_FILE&quot;, 0777);</div></pre></td></tr></table></figure>
-<p>抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R 777 yourfolder/</div></pre></td></tr></table></figure>
-<p>当然，严格意义上讲这样是不安全的。</p>
 
           
         
