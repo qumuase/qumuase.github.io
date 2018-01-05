@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  206 字
+                  152 字
                 </span>
               
 
@@ -460,14 +460,13 @@
       
         
           
-            <ol>
-<li>在后台模板进行模板编辑无保存按钮，提示当前为只读权限。个人解决方法就是修改整个文件夹的权限，使当前用户及组拥有Write和eXecute权限。<br><img src="http://images.43px.com/QQ%E6%88%AA%E5%9B%BE20160301231927.png" alt="wordpress"></li>
-<li>在wordpress后台版本更新或者安装插件时提示输入FTP账户信息，出现这个问题的原因是Apache/Nginx的执行身份是非文件归属身份。解决方法为编辑wordpress项目根目录下的配置文件(wp-config.php),在最后一行加上以下一行代码:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(&quot;FS_METHOD&quot;, &quot;direct&quot;);</div><div class="line">define(&quot;FS_CHMOD_DIR&quot;, 0777);</div><div class="line">define(&quot;FS_CHMOD_FILE&quot;, 0777);</div></pre></td></tr></table></figure>
-<p>抑或是遇到所有权限问题最简单粗暴直接的方法就是给整个网站目录添加权限：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R 777 yourfolder/</div></pre></td></tr></table></figure>
-<p>当然，严格意义上讲这样是不安全的。</p>
+            <h3 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ERROR in static/js/app.cc5c533156716b3e128a.js from UglifyJs</div><div class="line">Unexpected token: punc (() [static/js/app.cc5c533156716b3e128a.js:187,9]</div><div class="line"></div><div class="line">  Build failed with errors.</div></pre></td></tr></table></figure>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fn5qjsmm11j313i0gutba.jpg" alt=""></p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>目录下缺少 .babelrc 文件，无法编译 ES6 代码。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h5 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h5><p>添加并配置此文件即可。<br>Babel 是将 ES6 代码转为 ES5 代码的转码器，.babelrc 就是 Babel 的配置文件。<br>规则如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;: [</div><div class="line">    [&quot;env&quot;, &#123;</div><div class="line">      &quot;modules&quot;: false,</div><div class="line">      &quot;targets&quot;: &#123;</div><div class="line">        &quot;browsers&quot;: [&quot;&gt; 1%&quot;, &quot;last 2 versions&quot;, &quot;not ie &lt;= 8&quot;]</div><div class="line">      &#125;</div><div class="line">    &#125;],</div><div class="line">    &quot;stage-2&quot;</div><div class="line">  ],</div><div class="line">  &quot;plugins&quot;: [&quot;transform-runtime&quot;],</div><div class="line">  &quot;env&quot;: &#123;</div><div class="line">    &quot;test&quot;: &#123;</div><div class="line">      &quot;presets&quot;: [&quot;env&quot;, &quot;stage-2&quot;],</div><div class="line">      &quot;plugins&quot;: [&quot;istanbul&quot;]</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h5><p>可使用 npm 或 yarn 安装 babel-cli 进行命令行转码。</p>
+<p>更多 babel 相关知识可查看 <a href="http://www.ruanyifeng.com/blog/2016/01/babel.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2016/01/babel.html</a> 。</p>
 
           
         
