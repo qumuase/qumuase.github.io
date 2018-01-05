@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tmac.wang/2018/01/wordpress%E6%9D%83%E9%99%90%E5%8F%8A%E5%90%8E%E5%8F%B0FTP%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E7%9A%84%E5%89%AF%E6%9C%AC/</loc>
+    <loc>http://tmac.wang/2018/01/webpack%20%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%20ES6%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/</loc>
     
     <lastmod>2018-01-05T07:46:43.958Z</lastmod>
     
@@ -198,14 +198,7 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
-    
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
@@ -219,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
@@ -241,6 +234,13 @@
   
   <url>
     <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
