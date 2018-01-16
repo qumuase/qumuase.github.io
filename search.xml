@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[微信小程序要点记录]]></title>
+      <url>%2F2018%2F01%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[弹出框贴合手机键盘需求 问题由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。错误的实现方式： 实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。 12//cursor-spacing指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离 关键技术点修改弹出框的样式定位： 12position:absolute;bottom: 0; 为弹出框内的 input 或者 textarea 添加 cursor-spacing 属性，类型为 number，单位是 px，具体数字根据弹出框的高度来决定，官方文档中已有说明。 结果完美达到预期。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[用JSON格式的开源文档]]></title>
       <url>%2F2018%2F01%2F%E5%B8%B8%E7%94%A8JSON%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%BC%80%E6%BA%90%E6%96%87%E6%A1%A3%2F</url>
       <content type="text"><![CDATA[常用JSON格式的开源文档 如图，包含了以下三种文档格式： 1231. bower.json2. install.json3. package.json 详情页内进一步介绍了相关参数及示意。 地址：https://github.com/qumuase/JSON 欢迎拍砖，欢迎 star。文档内容还在继续更新完善，稍后也会支持移动端。]]></content>

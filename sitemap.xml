@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tmac.wang/2018/01/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2018-01-16T15:17:01.305Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://tmac.wang/2018/01/%E5%B8%B8%E7%94%A8JSON%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%BC%80%E6%BA%90%E6%96%87%E6%A1%A3/</loc>
     
     <lastmod>2018-01-08T14:18:13.875Z</lastmod>
@@ -212,20 +219,6 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
-    
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
@@ -233,7 +226,21 @@
   </url>
   
   <url>
+    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://tmac.wang/categories/index.html</loc>
+    
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
