@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  423 字
+                  453 字
                 </span>
               
 
@@ -459,7 +459,7 @@
 
       
         
-          <h3 id="弹出框贴合手机键盘"><a href="#弹出框贴合手机键盘" class="headerlink" title="弹出框贴合手机键盘"></a>弹出框贴合手机键盘</h3><h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fniuioilv5j30mu14qjte.jpg" alt=""></p>
+          <h3 id="弹出框贴合手机键盘"><a href="#弹出框贴合手机键盘" class="headerlink" title="弹出框贴合手机键盘"></a>弹出框贴合手机键盘</h3><h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p>点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。<br><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fniuioilv5j30mu14qjte.jpg" alt=""></p>
 <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。<br>错误的实现方式：<br><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fniuu8fi78j30ne16475i.jpg" alt=""></p>
 <h4 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h4><p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fniuldtg4kj31hs0kiwg7.jpg" alt=""><br><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html">官方文档</a>中指出了 <code>cursor-spacing</code> 属性的作用，可以试上一试。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//cursor-spacing</div><div class="line">指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离</div></pre></td></tr></table></figure>
