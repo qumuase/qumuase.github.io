@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[VS Code 造成 cpu 跑满的问题排查]]></title>
+      <url>%2F2018%2F02%2FVS%20Code%20%E9%80%A0%E6%88%90%20cpu%20%E8%B7%91%E6%BB%A1%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%2F</url>
+      <content type="text"><![CDATA[每次一打开 VS Code 电脑 cpu 就跑满，今天终于排查到了原因。主要影响的插件有两个： CSS Peek跳转到 CSS 定义行的插件 IntelliSense for CSS class namescss class输入提示的插件开启插件时：关闭插件时：]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[微信小程序要点记录]]></title>
       <url>%2F2018%2F01%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%A6%81%E7%82%B9%E8%AE%B0%E5%BD%95%2F</url>
       <content type="text"><![CDATA[弹出框贴合手机键盘需求点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。 问题由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。错误的实现方式： 实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。 12//cursor-spacing指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离 关键技术点修改弹出框的样式定位： 12position:absolute;bottom: 0; 为弹出框内的 input 或者 textarea 添加 cursor-spacing 属性，类型为 number，单位是 px，具体数字根据弹出框的高度来决定，官方文档中已有说明。 结果完美达到预期。 video 组件层级无法修改的问题官方文档中已经明确说明了这个问题，当页面中有自定义的悬浮按钮或者是底部固定栏，滚动页面就会出现 video 组件穿插覆盖到了最顶层的问题。如果想避免出现这种问题可通过使用 cover-view 视图容器来规避。 12//cover-view覆盖在原生组件之上的文本视图，可覆盖的原生组件包括map、video、canvas、camera，只支持嵌套cover-view、cover-image。 注意：cover-view 内外都只支持嵌套 cover-view、cover-image两个标签。所以如果原本想用 button 按钮直接 auto-share 时只能改为在 js 中配置分享,同样如果原本想用 navigator 导航时也就只能在 js 中指定导航了。]]></content>
