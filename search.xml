@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[React Native 各种坑]]></title>
       <url>%2F2018%2F02%2FReact%20Native%20%E5%90%84%E7%A7%8D%E5%9D%91%2F</url>
-      <content type="text"><![CDATA[#####FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor. keyExtractor 用于为给定的item生成一个不重复的key。若不指定此函数，则默认抽取item.key作为key值。若item.key也不存在，则使用数组下标index。 解决方法：添加 _keyExtractor = (item, index) =&gt; index; 。 12345678910111213141516renderLoadingView() &#123; ...&#125; _keyExtractor = (item, index) =&gt; index;renderMovie(movie) &#123; ...&#125;render() &#123; &lt;FlatList ... keyExtractor=&#123;this._keyExtractor&#125; /&gt;&#125;]]></content>
+      <content type="text"><![CDATA[FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor. keyExtractor 用于为给定的item生成一个不重复的key。若不指定此函数，则默认抽取item.key作为key值。若item.key也不存在，则使用数组下标index。 解决方法：添加 _keyExtractor = (item, index) =&gt; index; 。 12345678910111213141516renderLoadingView() &#123; ...&#125; _keyExtractor = (item, index) =&gt; index;renderMovie(movie) &#123; ...&#125;render() &#123; &lt;FlatList ... keyExtractor=&#123;this._keyExtractor&#125; /&gt;&#125;]]></content>
     </entry>
 
     

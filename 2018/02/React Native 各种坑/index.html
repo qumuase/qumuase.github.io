@@ -90,19 +90,19 @@
 
 
 
-<meta name="description" content="#####FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
-keyExtractor 用于为给定的item生成一个不重复的key。">
+<meta name="description" content="FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
+keyExtractor 用于为给定的item生成一个不重复的key。若不指定此">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React Native 各种坑">
 <meta property="og:url" content="http://tmac.wang/2018/02/React Native 各种坑/index.html">
 <meta property="og:site_name" content="qumuase">
-<meta property="og:description" content="#####FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
-keyExtractor 用于为给定的item生成一个不重复的key。">
-<meta property="og:updated_time" content="2018-02-21T11:39:01.128Z">
+<meta property="og:description" content="FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
+keyExtractor 用于为给定的item生成一个不重复的key。若不指定此">
+<meta property="og:updated_time" content="2018-02-21T11:41:39.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Native 各种坑">
-<meta name="twitter:description" content="#####FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
-keyExtractor 用于为给定的item生成一个不重复的key。">
+<meta name="twitter:description" content="FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
+keyExtractor 用于为给定的item生成一个不重复的key。若不指定此">
 
 
 
@@ -462,7 +462,7 @@ keyExtractor 用于为给定的item生成一个不重复的key。">
       
 
       
-        <p>#####FlatList 报错 keyExtractor 未指定唯一的 key<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.</div></pre></td></tr></table></figure></p>
+        <h5 id="FlatList-报错-keyExtractor-未指定唯一的-key"><a href="#FlatList-报错-keyExtractor-未指定唯一的-key" class="headerlink" title="FlatList 报错 keyExtractor 未指定唯一的 key"></a>FlatList 报错 keyExtractor 未指定唯一的 key</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.</div></pre></td></tr></table></figure>
 <p>keyExtractor 用于为给定的item生成一个不重复的key。若不指定此函数，则默认抽取item.key作为key值。若item.key也不存在，则使用数组下标index。</p>
 <p>解决方法：<br>添加 <code>_keyExtractor = (item, index) =&gt; index;</code> 。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">renderLoadingView() &#123;</div><div class="line">   ...</div><div class="line">&#125;</div><div class="line">  </div><div class="line">_keyExtractor = (item, index) =&gt; index;</div><div class="line"></div><div class="line">renderMovie(movie) &#123;</div><div class="line">    ...</div><div class="line">&#125;</div><div class="line"></div><div class="line">render() &#123;</div><div class="line">    &lt;FlatList</div><div class="line">        ...</div><div class="line">        keyExtractor=&#123;this._keyExtractor&#125;</div><div class="line">    /&gt;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -582,8 +582,17 @@ keyExtractor 用于为给定的item生成一个不重复的key。">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -645,6 +654,22 @@ keyExtractor 用于为给定的item生成一个不重复的key。">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#FlatList-报错-keyExtractor-未指定唯一的-key"><span class="nav-number">1.</span> <span class="nav-text">FlatList 报错 keyExtractor 未指定唯一的 key</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
