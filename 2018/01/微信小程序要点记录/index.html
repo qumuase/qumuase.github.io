@@ -92,28 +92,25 @@
 
 <meta name="description" content="弹出框贴合手机键盘需求点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。
 问题由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。错误的实现方式：
-实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。
-12//cursor-spacing指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离">
+实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信小程序要点记录">
 <meta property="og:url" content="http://tmac.wang/2018/01/微信小程序要点记录/index.html">
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="弹出框贴合手机键盘需求点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。
 问题由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。错误的实现方式：
-实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。
-12//cursor-spacing指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离">
+实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcly1fniuioilv5j30mu14qjte.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fniuu8fi78j30ne16475i.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1fniuldtg4kj31hs0kiwg7.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fniuu3keruj30ni16c3zr.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79ly1fniuy7c2paj311q06mq3i.jpg">
-<meta property="og:updated_time" content="2018-01-16T15:28:25.375Z">
+<meta property="og:updated_time" content="2018-02-23T01:11:25.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序要点记录">
 <meta name="twitter:description" content="弹出框贴合手机键盘需求点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。
 问题由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。错误的实现方式：
-实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。
-12//cursor-spacing指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离">
+实现官方文档中指出了 cursor-spacing 属性的作用，可以试上一试。">
 <meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tKfTcly1fniuioilv5j30mu14qjte.jpg">
 
 
@@ -477,10 +474,10 @@
         <h3 id="弹出框贴合手机键盘"><a href="#弹出框贴合手机键盘" class="headerlink" title="弹出框贴合手机键盘"></a>弹出框贴合手机键盘</h3><h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p>点击页面按钮时弹出悬浮输入框，输入框底部位置贴合在手机键盘顶部。<br><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fniuioilv5j30mu14qjte.jpg" alt=""></p>
 <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>由于无法获取手机键盘高度及手机键盘顶部到页面顶部的距离，所以用高度计算的方式无法定位弹出框的定位位置。<br>错误的实现方式：<br><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fniuu8fi78j30ne16475i.jpg" alt=""></p>
 <h4 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h4><p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fniuldtg4kj31hs0kiwg7.jpg" alt=""><br><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html" target="_blank" rel="external">官方文档</a>中指出了 <code>cursor-spacing</code> 属性的作用，可以试上一试。</p>
+<a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//cursor-spacing</div><div class="line">指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离</div></pre></td></tr></table></figure>
 <h4 id="关键技术点"><a href="#关键技术点" class="headerlink" title="关键技术点"></a>关键技术点</h4><p>修改弹出框的样式定位：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">position:absolute;</div><div class="line">bottom: 0;</div></pre></td></tr></table></figure>
-<a id="more"></a>
 <p>为弹出框内的 <code>input</code> 或者 <code>textarea</code> 添加 <code>cursor-spacing</code> 属性，类型为 number，单位是 px，具体数字根据弹出框的高度来决定，官方文档中已有说明。</p>
 <h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fniuu3keruj30ni16c3zr.jpg" alt=""><br>完美达到预期。</p>
 <h3 id="video-组件层级无法修改的问题"><a href="#video-组件层级无法修改的问题" class="headerlink" title="video 组件层级无法修改的问题"></a>video 组件层级无法修改的问题</h3><p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fniuy7c2paj311q06mq3i.jpg" alt=""><br>官方文档中已经明确说明了这个问题，当页面中有自定义的悬浮按钮或者是底部固定栏，滚动页面就会出现 <code>video</code> 组件穿插覆盖到了最顶层的问题。<br>如果想避免出现这种问题可通过使用 <code>cover-view</code> 视图容器来规避。</p>
