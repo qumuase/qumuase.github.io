@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[去往 weex 的路上 一步一个脚印 一步一个大坑]]></title>
+      <url>%2F2018%2F02%2F%E5%8E%BB%E5%BE%80%20weex%20%E7%9A%84%E8%B7%AF%E4%B8%8A%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E8%84%9A%E5%8D%B0%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%9D%91%2F</url>
+      <content type="text"><![CDATA[weex debug 报错12345This command need to install weex-debugger. Installing...sh: ./src/scripts/check_reqs.js: Permission deniedfs.js:891 return binding.mkdir(pathModule._makeLong(path), ^ 尝试了 sudo 依然提示是无权限被拒绝。 各种尝试之后最后突然就通了也不知道是哪个环节打通的，记录一下子。 1234567891011121314//翻墙手动下载 Permissionsudo cnpm i puppeteer -g//重新全局安装 weex-devtoolsudo cnpm install weex-devtool -g//重新全局安装 weex-toolkitsudo cnpm install weex-toolkit -g//指定端口weex debug -p 8081//重试 weex debugweex debug 然后不知为何就好了😷]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[iTerm 记录]]></title>
       <url>%2F2018%2F02%2FiTerm%20%E8%AE%B0%E5%BD%95%2F</url>
       <content type="text"><![CDATA[1234//添加国内镜像源vi ~/.npmrc//无需重启 iTerm 立即生效source ~/.npmrc 123456//修改环境变量vi ~/.bash_profile//无需重启 iTerm 立即生效source ~/.bash_profile//查看环境变量echo $ANDROID_HOME 12//hexo 发布系列hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 1234//查看内地端口占用lsof -i :8083// kill 端口kill -9 8083 1234//指定端口react-native start --port 8083//指定版本react-native init MyApp --version 0.44.3 12// react-native run-android 时建立真机连接adb reverse tcp:8081 tcp:8081 12//自执行./gradlew assembleRelease 12345//替换镜像源yarn config set registry https://registry.npm.taobao.org --globalyarn config set disturl https://npm.taobao.org/dist --globalnpm config set registry https://registry.npm.taobao.orgnpm config set disturl https://npm.taobao.org/dist 123456//调起 wireshark 网络监视器wireshark//命令行执行 wireshark 网络监听w2 start//命令行终止 wireshark 网络监听w2 stop 12//列出所有依赖包的名称、当前版本、最新版本列表npm outdated 12//浏览器自动打开模块的代码仓库cnpm repo react 1234//java JDK 位置/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home//System/Library/Frameworks]]></content>
