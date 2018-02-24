@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>http://tmac.wang/2018/02/%E5%8E%BB%E5%BE%80%20weex%20%E7%9A%84%E8%B7%AF%E4%B8%8A%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E8%84%9A%E5%8D%B0%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%9D%91/</loc>
-    <lastmod>2018-02-23T09:59:05.621Z</lastmod>
+    <loc>http://tmac.wang/2018/02/iTerm%20%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-02-24T03:58:13.590Z</lastmod>
     <data>
         <display>
-        <title>去往 weex 的路上 一步一个脚印 一步一个大坑</title>
-        <pubTime>2018-02-23T09:54:42.000Z</pubTime>
+        <title>iTerm 记录</title>
+        <pubTime>2018-02-22T14:44:42.000Z</pubTime>
         
-        <tag>weex</tag>
+        <tag>iTerm</tag>
+         
+        <tag>命令</tag>
          
          
            
@@ -24,16 +26,14 @@
 
     
   <url>
-    <loc>http://tmac.wang/2018/02/iTerm%20%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-02-23T09:58:39.140Z</lastmod>
+    <loc>http://tmac.wang/2018/02/%E5%8E%BB%E5%BE%80%20weex%20%E7%9A%84%E8%B7%AF%E4%B8%8A%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E8%84%9A%E5%8D%B0%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%9D%91/</loc>
+    <lastmod>2018-02-23T09:59:05.621Z</lastmod>
     <data>
         <display>
-        <title>iTerm 记录</title>
-        <pubTime>2018-02-22T14:44:42.000Z</pubTime>
+        <title>去往 weex 的路上 一步一个脚印 一步一个大坑</title>
+        <pubTime>2018-02-23T09:54:42.000Z</pubTime>
         
-        <tag>iTerm</tag>
-         
-        <tag>命令</tag>
+        <tag>weex</tag>
          
          
            
@@ -669,28 +669,6 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>mac</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
@@ -708,28 +686,6 @@
            
              
               <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>Framework7</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
           
         </display>
     </data>
@@ -761,6 +717,28 @@
 
     
   <url>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>Framework7</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2017/04/hello-world/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
@@ -774,6 +752,28 @@
            
              
               <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
           
         </display>
     </data>
