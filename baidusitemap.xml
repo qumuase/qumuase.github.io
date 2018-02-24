@@ -3,10 +3,9 @@
 
 
     
-    
   <url>
     <loc>http://tmac.wang/2018/02/iTerm%20%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-02-24T03:58:13.590Z</lastmod>
+    <lastmod>2018-02-24T07:16:44.122Z</lastmod>
     <data>
         <display>
         <title>iTerm 记录</title>
@@ -25,6 +24,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://tmac.wang/2018/02/%E5%8E%BB%E5%BE%80%20weex%20%E7%9A%84%E8%B7%AF%E4%B8%8A%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E8%84%9A%E5%8D%B0%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%9D%91/</loc>
@@ -634,9 +634,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>Godaddy</tag>
-         
         <tag>技巧</tag>
+         
+        <tag>Godaddy</tag>
          
          
            
@@ -657,52 +657,6 @@
         <pubTime>2017-05-14T13:40:42.000Z</pubTime>
         
         <tag>技术相关</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>Framework7</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>git日常报错</title>
-        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
-        
-        <tag>技巧</tag>
-         
-        <tag>git</tag>
-         
-        <tag>coding</tag>
          
          
            
@@ -739,6 +693,52 @@
 
     
   <url>
+    <loc>http://tmac.wang/2017/05/git%E6%97%A5%E5%B8%B8%E6%8A%A5%E9%94%99/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>git日常报错</title>
+        <pubTime>2017-05-19T15:16:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>git</tag>
+         
+        <tag>coding</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>Framework7</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2017/04/hello-world/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
@@ -757,7 +757,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
@@ -780,6 +779,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
