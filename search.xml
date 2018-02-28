@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[MAC 配置终端走代理翻墙]]></title>
+      <url>%2F2018%2F02%2FMAC%20%E9%85%8D%E7%BD%AE%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86%E7%BF%BB%E5%A2%99%2F</url>
+      <content type="text"><![CDATA[在终端中运行命令： 1export http_proxy=http://127.0.0.1:port 或者 1export ALL_PROXY=socks5://127.0.0.1:port Shadowsocks 可如下图方式查看并自动复制具体端口]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[flutter 配置开发环境]]></title>
+      <url>%2F2018%2F02%2Fflutter%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+      <content type="text"><![CDATA[获取 Flutter SDK12//beta 版本git clone -b beta https://github.com/flutter/flutter.git 添加系统变量12345678910//添加临时系统变量 `pwd` 替换为刚才克隆的 flutter 的路径export PATH=`pwd`/bin:$PATH// 为保证在任意位置可执行 flutter 命令，应该添加永久系统变量vi $HOME/.bash_profile//添加以下内容 [PATH_TO_FLUTTER_GIT_DIRECTORY] 替换为刚才克隆的 flutter 的路径export PATH=[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin:$PATH//更新系统变量source $HOME/.bash_profile//可查看是否添加成功echo $PATH 安装依赖1flutter doctor 1234Downloading Dart SDK from Flutter engine 13cf22c284c24f81357aec6a89074a536efbf4d1... % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 0 0 0 0 0 0 0 0 --:--:-- 0:01:14 --:--:-- 0 此步骤需要终端翻墙，否则可能会报错：curl: (7) Failed to connect to storage.googleapis.com port 443: Operation timed out 1234567891011121314151617181920212223 //过程较慢，耐心等待 ╔════════════════════════════════════════════════════════════════════════════╗ ║ Welcome to Flutter! - https://flutter.io ║ ║ ║ ║ The Flutter tool anonymously reports feature usage statistics and crash ║ ║ reports to Google in order to help Google contribute improvements to ║ ║ Flutter over time. ║ ║ ║ ║ Read about data we send with crash reports: ║ ║ https://github.com/flutter/flutter/wiki/Flutter-CLI-crash-reporting ║ ║ ║ ║ See Google&apos;s privacy policy: ║ ║ https://www.google.com/intl/en/policies/privacy/ ║ ║ ║ ║ Use &quot;flutter config --no-analytics&quot; to disable analytics and crash ║ ║ reporting. ║ ╚════════════════════════════════════════════════════════════════════════════╝Downloading Material fonts... 7.5sDownloading package sky_engine... 6.3sDownloading common tools... 14.9sDownloading darwin-x64 tools... 32.1s...]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[去往 weex 的路上 一步一个脚印 一步一个大坑]]></title>
       <url>%2F2018%2F02%2F%E5%8E%BB%E5%BE%80%20weex%20%E7%9A%84%E8%B7%AF%E4%B8%8A%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E8%84%9A%E5%8D%B0%20%E4%B8%80%E6%AD%A5%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%9D%91%2F</url>
       <content type="text"><![CDATA[weex debug 报错12345This command need to install weex-debugger. Installing...sh: ./src/scripts/check_reqs.js: Permission deniedfs.js:891 return binding.mkdir(pathModule._makeLong(path), ^ 尝试了 sudo 依然提示是无权限被拒绝。 各种尝试之后最后突然就通了也不知道是哪个环节打通的，记录一下子。 1234567891011121314//翻墙手动下载 Permissionsudo cnpm i puppeteer -g//重新全局安装 weex-devtoolsudo cnpm install weex-devtool -g//重新全局安装 weex-toolkitsudo cnpm install weex-toolkit -g//指定端口weex debug -p 8081//重试 weex debugweex debug 然后不知为何就好了😷]]></content>
