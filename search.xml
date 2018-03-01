@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[flutter 配置国内镜像]]></title>
+      <url>%2F2018%2F03%2Fflutter%20%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%2F</url>
+      <content type="text"><![CDATA[最近 flutter 官方针对国内下载依赖失败的问题，放出了国内的镜像地址Wiki地址 123456export PUB_HOSTED_URL=https://pub.flutter-io.cnexport FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cngit clone -b dev https://github.com/flutter/flutter.gitexport PATH=&quot;$PWD/flutter/bin:$PATH&quot;cd ./flutterflutter doctor 上手试了试，速度刷刷快。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[MAC 配置终端走代理翻墙]]></title>
       <url>%2F2018%2F02%2FMAC%20%E9%85%8D%E7%BD%AE%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86%E7%BF%BB%E5%A2%99%2F</url>
       <content type="text"><![CDATA[在终端中运行命令： 1export http_proxy=http://127.0.0.1:port 或者 1export ALL_PROXY=socks5://127.0.0.1:port Shadowsocks 可如下图方式查看并自动复制具体端口]]></content>
