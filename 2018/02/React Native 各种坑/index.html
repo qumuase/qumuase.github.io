@@ -99,7 +99,7 @@ keyExtractor 用于为给定的item生成一个不重复的key。若不指定此
 <meta property="og:description" content="FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
 keyExtractor 用于为给定的item生成一个不重复的key。若不指定此">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fooezkqq9oj31kw0dsq4j.jpg">
-<meta property="og:updated_time" content="2018-02-23T01:09:44.088Z">
+<meta property="og:updated_time" content="2018-03-03T10:05:31.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Native 各种坑">
 <meta name="twitter:description" content="FlatList 报错 keyExtractor 未指定唯一的 key1VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
@@ -430,7 +430,7 @@ keyExtractor 用于为给定的item生成一个不重复的key。若不指定此
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  287 字
+                  415 字
                 </span>
               
 
@@ -446,7 +446,7 @@ keyExtractor 用于为给定的item生成一个不重复的key。若不指定此
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -476,6 +476,10 @@ keyExtractor 用于为给定的item生成一个不重复的key。若不指定此
 <p>这时候打印请求到的 <code>movie</code> 是这样的：</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fooezkqq9oj31kw0dsq4j.jpg" alt=""><br>所以，真实数据应该是 <code>movie.item</code> 。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">renderMovie(movie) &#123;</div><div class="line">    return (</div><div class="line">      &lt;View style=&#123;styles.container&#125;&gt;</div><div class="line">        &lt;Image</div><div class="line">          source=&#123;&#123;uri: movie.item.posters.thumbnail&#125;&#125;</div><div class="line">          style=&#123;styles.thumbnail&#125;</div><div class="line">        /&gt;</div><div class="line">        &lt;View style=&#123;styles.rightContainer&#125;&gt;</div><div class="line">          &lt;Text style=&#123;styles.title&#125;&gt;&#123;movie.item.title&#125;&lt;/Text&gt;</div><div class="line">          &lt;Text style=&#123;styles.year&#125;&gt;&#123;movie.item.year&#125;&lt;/Text&gt;</div><div class="line">        &lt;/View&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h5 id="ReactNative-The-development-server-returned-response-error-code-500。"><a href="#ReactNative-The-development-server-returned-response-error-code-500。" class="headerlink" title="ReactNative:The development server returned response error code: 500。"></a>ReactNative:The development server returned response error code: 500。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">I&apos;m making react-native app with my frd. So I got the code my frd first made and I wanted to open my computer. I think I set everything and did tcp:8081 setting in dev menu. but I got error message after started react-native packager. I use real phone device.</div></pre></td></tr></table></figure>
+<p>运行 ReactNative 项目时出现500的错误，最后通过给 <code>babel-preset-react-native</code> 降级或者安装来解决了这个问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//npm</div><div class="line">npm install babel-preset-react-native@2.1.0 —save</div><div class="line">//yarn</div><div class="line">yarn add babel-preset-react-native@2.1.0</div></pre></td></tr></table></figure>
+<p>记得安装后要重启项目。</p>
 
       
     </div>
@@ -678,7 +682,7 @@ keyExtractor 用于为给定的item生成一个不重复的key。若不指定此
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#FlatList-报错-keyExtractor-未指定唯一的-key"><span class="nav-number">1.</span> <span class="nav-text">FlatList 报错 keyExtractor 未指定唯一的 key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#React-Native中文网电影列表示例中的错误"><span class="nav-number">2.</span> <span class="nav-text">React Native中文网电影列表示例中的错误</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#FlatList-报错-keyExtractor-未指定唯一的-key"><span class="nav-number">1.</span> <span class="nav-text">FlatList 报错 keyExtractor 未指定唯一的 key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#React-Native中文网电影列表示例中的错误"><span class="nav-number">2.</span> <span class="nav-text">React Native中文网电影列表示例中的错误</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ReactNative-The-development-server-returned-response-error-code-500。"><span class="nav-number">3.</span> <span class="nav-text">ReactNative:The development server returned response error code: 500。</span></a></li></ol></div>
             
 
           </div>
