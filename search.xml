@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Axios拦截器]]></title>
+      <url>%2F2018%2F04%2FAxios%E6%8B%A6%E6%88%AA%E5%99%A8%2F</url>
+      <content type="text"><![CDATA[请求拦截器12345678// 添加请求拦截器axios.interceptors.request.use(function (config) &#123; // 在发送请求之前做些什么 return config;&#125;, function (error) &#123; // 对请求错误做些什么 return Promise.reject(error);&#125;); 可添加对前置data的处理： 123456789axios.interceptors.request.use(function (config) &#123; if(config.method == &apos;post&apos;)&#123; config.data = qs.stringify(config.data) &#125; return config&#125;,function (error) &#123; // 对请求错误做些什么 return Promise.reject(error);&#125;); 响应拦截器12345678// 添加响应拦截器axios.interceptors.response.use(function (response) &#123; // 对响应数据做点什么 return response;&#125;, function (error) &#123; // 对响应错误做点什么 return Promise.reject(error);&#125;); 可添加对权限码的处理： 1234567891011121314axios.interceptors.response.use(function (response) &#123; switch (response.data.code) &#123; case 401: Message.error(&apos;暂无权限！&apos;) break; case 200: return response; break; default: break; &#125;&#125;, function (error) &#123; return Promise.reject(error);&#125;);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[flutter 配置国内镜像]]></title>
       <url>%2F2018%2F03%2Fflutter%20%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%2F</url>
       <content type="text"><![CDATA[最近 flutter 官方针对国内下载依赖失败的问题，放出了国内的镜像地址Wiki地址 123456export PUB_HOSTED_URL=https://pub.flutter-io.cnexport FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cngit clone -b dev https://github.com/flutter/flutter.gitexport PATH=&quot;$PWD/flutter/bin:$PATH&quot;cd ./flutterflutter doctor 上手试了试，速度刷刷快。]]></content>
