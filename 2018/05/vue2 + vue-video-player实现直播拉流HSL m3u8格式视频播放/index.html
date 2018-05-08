@@ -98,11 +98,13 @@
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="名词释义：直播推流、拉流简单来讲：拉流是从服务器获取视频，推流是将视频推送服务器。
 推流：推流，指的是把采集阶段封包好的内容传输到服务器的过程。其实就是将现场的视频信号传到网络的过程。“推流”对网络要求比较高，如果网络不稳定，直播效果就会很差，观众观看直播时就会发生卡顿等现象，观看体验很是糟糕。推流主流推送协议分三种：RTMPRTMP是Adobe公司为Flash/AIR平台和服务器之间音、视频及数">
-<meta property="og:updated_time" content="2018-05-08T02:22:52.151Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1fr3st34u4vj31kw12a782.jpg">
+<meta property="og:updated_time" content="2018-05-08T04:03:36.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue2 + vue-video-player实现直播拉流HSL m3u8格式视频播放Contributions">
 <meta name="twitter:description" content="名词释义：直播推流、拉流简单来讲：拉流是从服务器获取视频，推流是将视频推送服务器。
 推流：推流，指的是把采集阶段封包好的内容传输到服务器的过程。其实就是将现场的视频信号传到网络的过程。“推流”对网络要求比较高，如果网络不稳定，直播效果就会很差，观众观看直播时就会发生卡顿等现象，观看体验很是糟糕。推流主流推送协议分三种：RTMPRTMP是Adobe公司为Flash/AIR平台和服务器之间音、视频及数">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1fr3st34u4vj31kw12a782.jpg">
 
 
 
@@ -468,6 +470,7 @@
 <a id="more"></a>
 <p><strong>HLS</strong><br>HLS是由Apple公司定义的基于HTTP的流媒体实时传输协议。它的原理是将整个流分为多个小的文件来下载，每次只下载若干个。HLS是以点播的技术实现了直播的体验。因为每个小文件的时长很短，客户端可以很快地切换码率，以适应不同带宽条件下的播放。</p>
 <p>分段推送的技术特点，决定了HLS的延迟一般会高于普通的流媒体直播协议。传输内容包括两部分：一是M3U8描述文件，二是TS媒体文件。<br><strong>WebRTC</strong><br>WebRTC是一个支持浏览器进行实时语音、视频对话的开源协议。WebRTC的支持者甚多，Google、Mozilla、Opera推动其成为W3C推荐标准。</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fr3st34u4vj31kw12a782.jpg" alt=""></p>
 <h5 id="拉流："><a href="#拉流：" class="headerlink" title="拉流："></a>拉流：</h5><p>拉流是指服务器已有直播内容，根据协议类型（如RTMP、RTP、RTSP、HTTP等），与服务器建立连接并接收数据，进行拉取的过程。拉流端的核心处理在播放器端的解码和渲染，在互动直播中还需集成聊天室、点赞和礼物系统等功能。</p>
 <h5 id="推流和拉流的区别？"><a href="#推流和拉流的区别？" class="headerlink" title="推流和拉流的区别？"></a>推流和拉流的区别？</h5><p>用户最终看到一条直播视频，可能会通过两种方式达成，一种是主动把内容传输到服务器，缓存在边缘节点，终端用户随时可以调取观看，这是推流；一种是当终端用户想要看某个内容时，将内容从源站调取，并缓存到边缘节点，这是拉流。</p>
 <h4 id="vue-video-player"><a href="#vue-video-player" class="headerlink" title="vue-video-player"></a>vue-video-player</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">//安装依赖</div><div class="line">npm install vue-video-player --save</div><div class="line">//播放HLS协议视频(*.m3u8)需要额外依赖</div><div class="line">npm install videojs-contrib-hls --save</div><div class="line">//测试发现无video.js依赖还是播不了</div><div class="line">npm install video.js --save</div><div class="line"></div><div class="line">//package.json内dependencies的video相关</div><div class="line">&quot;video.js&quot;: &quot;^6.8.0&quot;,</div><div class="line">&quot;videojs-contrib-hls&quot;: &quot;^5.14.1&quot;,</div><div class="line">&quot;vue-video-player&quot;: &quot;^5.0.2&quot;,</div></pre></td></tr></table></figure>
