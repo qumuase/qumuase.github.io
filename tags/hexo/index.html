@@ -93,7 +93,7 @@
 <meta name="description" content="qumuase的个人网站，关于技术的点滴记录。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="qumuase">
-<meta property="og:url" content="http://tmac.wang/tags/Hexo/index.html">
+<meta property="og:url" content="http://tmac.wang/tags/hexo/index.html">
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="qumuase的个人网站，关于技术的点滴记录。">
 <meta name="twitter:card" content="summary">
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://tmac.wang/tags/Hexo/"/>
+  <link rel="canonical" href="http://tmac.wang/tags/hexo/"/>
 
 
 
 
 
-  <title> 标签: Hexo | qumuase </title>
+  <title> 标签: hexo | qumuase </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -323,7 +323,7 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        Hexo
+        hexo
         <small>标签</small>
       </h2>
     </div>
@@ -336,9 +336,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/06/Hexo搭建Github-Pages&amp;Coding-Pages博客操作指南/" itemprop="url">
+            <a class="post-title-link" href="/2017/04/hexo日常报错维护/" itemprop="url">
               
-                <span itemprop="name">Hexo搭建Github Pages&amp;Coding Pages博客操作指南</span>
+                <span itemprop="name">hexo日常报错维护</span>
               
             </a>
         
@@ -346,9 +346,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-14T22:26:42+08:00"
-              content="2017-06-14" >
-          06-14
+              datetime="2017-04-27T00:05:42+08:00"
+              content="2017-04-27" >
+          04-27
         </time>
       </div>
 
@@ -722,6 +722,70 @@
 
                     str += "<p class=\"search-result\">" + match_content +"...</p>"
                   }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+        }
                   str += "</li>";
                 }
               })};
