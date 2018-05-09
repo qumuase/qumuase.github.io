@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  188 字
+                  227 字
                 </span>
               
 
@@ -460,7 +460,7 @@
       
         
           
-            <p>由于百度无法爬取Github Pages静态网站，所以在双重部署到 GitHub 及 Coding 之后，重新配置 DNS 解析线路后，可通过以下方式快速测试百度蜘蛛的 UA 能否访问网站，如果获取到了网站的内容，说明双部署解析成功了，网站可以被百度正常爬取了。</p>
+            <p>由于百度无法爬取Github Pages静态网站，所以在双重部署到 GitHub 及 Coding 之后，重新配置 DNS 解析线路后，可通过以下方式快速测试百度蜘蛛的 UA 能否访问网站，如果获取到了网站的内容且<strong>确定是当前页面内的内容</strong>，说明多部署解析成功了，网站可以被百度正常爬取了。（ <em>实测会存在能获取到代码，但是无当前页面body内具体内容的情况</em> ）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -A &quot;Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)&quot; http://tmac.wang</div></pre></td></tr></table></figure>
 <p>注：<br>国内通过Coding部署时要注意项目名称应为同用户名项目。即：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&#123;username&#125;.coding.me， </div><div class="line">这样稍后生成的 Pages 默认链接即为 &#123;username&#125;.coding.me。</div></pre></td></tr></table></figure>
