@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[vuecli+webpack打包后背景图片的引用路径问题]]></title>
+      <url>%2F2018%2F05%2Fvuecli%2Bwebpack%E6%89%93%E5%8C%85%E5%90%8E%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%9A%84%E5%BC%95%E7%94%A8%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98%2F</url>
+      <content type="text"><![CDATA[打包后引用js及css文件路径错误默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。 方法一： build &gt; webpack.prod.conf.js文件的 output 对象中增加一行 1publicPath: &apos;./&apos;, 方法二：修改config &gt; index.js文件build对象的assetsPublicPath属性 1assetsPublicPath: &apos;./&apos;, css中背景图片的路径引用问题css中引用的背景图片是通过css加载的，如 background: url(“./assets/img/logo.png”);被相对打包后变成了url(static/css/static/img/logo.505c344.png)，因此我们要保留css引用图片的正常路径，达到这样的效果： 1url(../../static/img/logo.505c344.png) 1、查找build &gt; utils.js文件中的以下代码位置： 12345678if (options.extract) &#123; return ExtractTextPlugin.extract(&#123; use: loaders, fallback: &apos;vue-style-loader&apos; &#125;) &#125; else &#123; return [&apos;vue-style-loader&apos;].concat(loaders) &#125; 2、在 fallback 下添加一行： 12//上一行的别忘了逗号publicPath: &apos;../../&apos; 3、最终如此： 123456789if (options.extract) &#123; return ExtractTextPlugin.extract(&#123; use: loaders, fallback: &apos;vue-style-loader&apos;, publicPath: &apos;../../&apos; &#125;)&#125; else &#123; return [&apos;vue-style-loader&apos;].concat(loaders)&#125; 然后重新打包项目即可。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[快速测试百度对Github Pages静态网站的抓取及多部署解析]]></title>
       <url>%2F2018%2F05%2F%E5%BF%AB%E9%80%9F%E6%B5%8B%E8%AF%95%E7%99%BE%E5%BA%A6%E5%AF%B9Github%20Pages%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E7%9A%84%E6%8A%93%E5%8F%96%E5%8F%8A%E5%A4%9A%E9%83%A8%E7%BD%B2%E8%A7%A3%E6%9E%90%2F</url>
       <content type="text"><![CDATA[由于百度无法爬取Github Pages静态网站，所以在双重部署到 GitHub 及 Coding 之后，重新配置 DNS 解析线路后，可通过以下方式快速测试百度蜘蛛的 UA 能否访问网站，如果获取到了网站的内容且确定是当前页面内的内容，说明多部署解析成功了，网站可以被百度正常爬取了。（ 实测会存在能获取到代码，但是无当前页面body内具体内容的情况 ） 1curl -A &quot;Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)&quot; http://tmac.wang 注：国内通过Coding部署时要注意项目名称应为同用户名项目。即： 12&#123;username&#125;.coding.me， 这样稍后生成的 Pages 默认链接即为 &#123;username&#125;.coding.me。 相关参考：Hexo搭建Github Pages及Coding Pages博客操作指南Coding Pages自定义域名捆绑跳转页面]]></content>
