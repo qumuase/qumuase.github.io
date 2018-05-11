@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="webpack,vue,vuecli," />
+  <meta name="keywords" content="vue,vuecli,webpack," />
 
 
 
@@ -100,7 +100,7 @@
 <meta property="og:description" content="打包后引用js及css文件路径错误默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。
 方法一： build &amp;gt; webpack.prod.conf.js文件的 output 对象中增加一行
 1publicPath: &amp;apos">
-<meta property="og:updated_time" content="2018-05-10T16:32:21.443Z">
+<meta property="og:updated_time" content="2018-05-11T01:56:56.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vuecli+webpack打包后背景图片的引用路径问题">
 <meta name="twitter:description" content="打包后引用js及css文件路径错误默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。
@@ -468,6 +468,7 @@
         <h4 id="打包后引用js及css文件路径错误"><a href="#打包后引用js及css文件路径错误" class="headerlink" title="打包后引用js及css文件路径错误"></a>打包后引用js及css文件路径错误</h4><p>默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。<br>因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。</p>
 <p><strong>方法一</strong>：<br> <code>build &gt; webpack.prod.conf.js</code>文件的 output 对象中增加一行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">publicPath: &apos;./&apos;,</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p><strong>方法二</strong>：<br>修改<code>config &gt; index.js</code>文件build对象的assetsPublicPath属性</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">assetsPublicPath: &apos;./&apos;,</div></pre></td></tr></table></figure>
 <h4 id="css中背景图片的路径引用问题"><a href="#css中背景图片的路径引用问题" class="headerlink" title="css中背景图片的路径引用问题"></a>css中背景图片的路径引用问题</h4><p>css中引用的背景图片是通过css加载的，如 background: url(“./assets/img/logo.png”);被相对打包后变成了url(static/css/static/img/logo.505c344.png)，因此我们要保留css引用图片的正常路径，达到这样的效果：</p>
@@ -523,11 +524,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/webpack/" rel="tag"><i class="fa fa-tag"></i> webpack</a>
-          
             <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
           
             <a href="/tags/vuecli/" rel="tag"><i class="fa fa-tag"></i> vuecli</a>
+          
+            <a href="/tags/webpack/" rel="tag"><i class="fa fa-tag"></i> webpack</a>
           
         </div>
       

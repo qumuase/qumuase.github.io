@@ -459,23 +459,16 @@
 
       
         
-          
-            <h4 id="打包后引用js及css文件路径错误"><a href="#打包后引用js及css文件路径错误" class="headerlink" title="打包后引用js及css文件路径错误"></a>打包后引用js及css文件路径错误</h4><p>默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。<br>因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。</p>
+          <h4 id="打包后引用js及css文件路径错误"><a href="#打包后引用js及css文件路径错误" class="headerlink" title="打包后引用js及css文件路径错误"></a>打包后引用js及css文件路径错误</h4><p>默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。<br>因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。</p>
 <p><strong>方法一</strong>：<br> <code>build &gt; webpack.prod.conf.js</code>文件的 output 对象中增加一行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">publicPath: &apos;./&apos;,</div></pre></td></tr></table></figure>
-<p><strong>方法二</strong>：<br>修改<code>config &gt; index.js</code>文件build对象的assetsPublicPath属性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">assetsPublicPath: &apos;./&apos;,</div></pre></td></tr></table></figure>
-<h4 id="css中背景图片的路径引用问题"><a href="#css中背景图片的路径引用问题" class="headerlink" title="css中背景图片的路径引用问题"></a>css中背景图片的路径引用问题</h4><p>css中引用的背景图片是通过css加载的，如 background: url(“./assets/img/logo.png”);被相对打包后变成了url(static/css/static/img/logo.505c344.png)，因此我们要保留css引用图片的正常路径，达到这样的效果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">url(../../static/img/logo.505c344.png)</div></pre></td></tr></table></figure>
-<p>1、查找<code>build &gt; utils.js</code>文件中的以下代码位置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if (options.extract) &#123;</div><div class="line">      return ExtractTextPlugin.extract(&#123;</div><div class="line">        use: loaders,</div><div class="line">        fallback: &apos;vue-style-loader&apos;</div><div class="line">      &#125;)</div><div class="line">    &#125; else &#123;</div><div class="line">      return [&apos;vue-style-loader&apos;].concat(loaders)</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>2、在 fallback 下添加一行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//上一行的别忘了逗号</div><div class="line">publicPath: &apos;../../&apos;</div></pre></td></tr></table></figure>
-<p>3、最终如此：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">if (options.extract) &#123;</div><div class="line">      return ExtractTextPlugin.extract(&#123;</div><div class="line">        use: loaders,</div><div class="line">        fallback: &apos;vue-style-loader&apos;,</div><div class="line">        publicPath: &apos;../../&apos;</div><div class="line">      &#125;)</div><div class="line">&#125; else &#123;</div><div class="line">      return [&apos;vue-style-loader&apos;].concat(loaders)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>然后重新打包项目即可。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/vuecli+webpack打包后背景图片的引用路径问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1400,6 +1393,182 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/04/HTTP请求中Form Data与RequestPayload的区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qumuase">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qumuase">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/" itemprop="url">
+                  HTTP请求中Form Data与RequestPayload的区别
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-20T00:14:42+08:00">
+                2018-04-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据相关/" itemprop="url" rel="index">
+                    <span itemprop="name">数据相关</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  461 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  2 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="定义方式的区别"><a href="#定义方式的区别" class="headerlink" title="定义方式的区别"></a>定义方式的区别</h4><p>Form Data和RequestPayload是浏览器传输数据给接口的其中两种格式，浏览器是通过Content-Type来进行区分。<br>如果是<code>application/x-www-form-urlencoded</code>，则为formdata方式，如果是<code>application/json</code>方式，则为payload方式。<br><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fqiwibvfyoj30ni0e20tv.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1fqiwje9b03j315i0e60ua.jpg" alt=""></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/04/Axios拦截器/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1536,182 +1705,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">axios.interceptors.response.use(function (response) &#123;</div><div class="line">    switch (response.data.code) &#123;</div><div class="line">        case 401:</div><div class="line">            Message.error(&apos;暂无权限！&apos;)</div><div class="line">            break;</div><div class="line">        case 200:</div><div class="line">            return response;</div><div class="line">            break;</div><div class="line">        default:</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">&#125;, function (error) &#123;</div><div class="line">    return Promise.reject(error);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
           
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/04/HTTP请求中Form Data与RequestPayload的区别/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qumuase">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="qumuase">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/" itemprop="url">
-                  HTTP请求中Form Data与RequestPayload的区别
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-20T00:14:42+08:00">
-                2018-04-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据相关/" itemprop="url" rel="index">
-                    <span itemprop="name">数据相关</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计</span>
-                
-                <span title="字数统计">
-                  461 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
-                
-                <span title="阅读时长">
-                  2 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="定义方式的区别"><a href="#定义方式的区别" class="headerlink" title="定义方式的区别"></a>定义方式的区别</h4><p>Form Data和RequestPayload是浏览器传输数据给接口的其中两种格式，浏览器是通过Content-Type来进行区分。<br>如果是<code>application/x-www-form-urlencoded</code>，则为formdata方式，如果是<code>application/json</code>方式，则为payload方式。<br><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fqiwibvfyoj30ni0e20tv.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1fqiwje9b03j315i0e60ua.jpg" alt=""></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
