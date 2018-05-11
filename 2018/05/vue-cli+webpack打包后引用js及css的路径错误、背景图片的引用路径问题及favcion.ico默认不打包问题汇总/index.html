@@ -94,15 +94,15 @@
 方法一： build &amp;gt; webpack.prod.conf.js文件的 output 对象中增加一行
 1publicPath: &amp;apos">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vuecli+webpack打包后背景图片的引用路径问题">
-<meta property="og:url" content="http://tmac.wang/2018/05/vuecli+webpack打包后背景图片的引用路径问题/index.html">
+<meta property="og:title" content="vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总">
+<meta property="og:url" content="http://tmac.wang/2018/05/vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总/index.html">
 <meta property="og:site_name" content="qumuase">
 <meta property="og:description" content="打包后引用js及css文件路径错误默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。
 方法一： build &amp;gt; webpack.prod.conf.js文件的 output 对象中增加一行
 1publicPath: &amp;apos">
-<meta property="og:updated_time" content="2018-05-11T01:56:56.438Z">
+<meta property="og:updated_time" content="2018-05-11T08:42:59.947Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vuecli+webpack打包后背景图片的引用路径问题">
+<meta name="twitter:title" content="vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总">
 <meta name="twitter:description" content="打包后引用js及css文件路径错误默认情况下，通过vuecli+webpack打包的css、js等资源，路径都是绝对的。当部署到牵涉路径的项目中时，绝对路径的引用就会出现问题。因为默认是把配置的static文件夹当作了根路径，因需要修改引用为相对路径。
 方法一： build &amp;gt; webpack.prod.conf.js文件的 output 对象中增加一行
 1publicPath: &amp;apos">
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://tmac.wang/2018/05/vuecli+webpack打包后背景图片的引用路径问题/"/>
+  <link rel="canonical" href="http://tmac.wang/2018/05/vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总/"/>
 
 
 
 
 
-  <title> vuecli+webpack打包后背景图片的引用路径问题 | qumuase </title>
+  <title> vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总 | qumuase </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -337,7 +337,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/05/vuecli+webpack打包后背景图片的引用路径问题/">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/05/vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="qumuase">
@@ -358,7 +358,7 @@
             
             
               
-                vuecli+webpack打包后背景图片的引用路径问题
+                vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总
               
             
           </h2>
@@ -431,7 +431,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  305 字
+                  427 字
                 </span>
               
 
@@ -447,7 +447,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -480,6 +480,13 @@
 <p>3、最终如此：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">if (options.extract) &#123;</div><div class="line">      return ExtractTextPlugin.extract(&#123;</div><div class="line">        use: loaders,</div><div class="line">        fallback: &apos;vue-style-loader&apos;,</div><div class="line">        publicPath: &apos;../../&apos;</div><div class="line">      &#125;)</div><div class="line">&#125; else &#123;</div><div class="line">      return [&apos;vue-style-loader&apos;].concat(loaders)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>然后重新打包项目即可。</p>
+<h4 id="favcion-ico默认不打包问题"><a href="#favcion-ico默认不打包问题" class="headerlink" title="favcion.ico默认不打包问题"></a>favcion.ico默认不打包问题</h4><p>在<code>build &gt; webpack.prod.conf.js</code>文件内查找<code>new CopyWebpackPlugin</code>，添加以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//路径根据自己实际情况</div><div class="line">&#123;</div><div class="line">  from: &apos;./src/assets/img/favicon.ico&apos;,</div><div class="line">  to: config.build.assetsRoot</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>最终如此：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">new CopyWebpackPlugin([</div><div class="line">     &#123;</div><div class="line">       from: path.resolve(__dirname, &apos;../static&apos;),</div><div class="line">       to: config.build.assetsSubDirectory,</div><div class="line">       ignore: [&apos;.*&apos;]</div><div class="line">     &#125;,</div><div class="line">     </div><div class="line">     &#123;</div><div class="line">       from: &apos;./src/assets/img/favicon.ico&apos;,</div><div class="line">       to: config.build.assetsRoot</div><div class="line">     &#125;</div><div class="line">])</div></pre></td></tr></table></figure>
+<p>然后配置根目录下.html文件，修改icon路径为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;shortcut icon&quot; href=&quot;./favicon.ico&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>最后打包后的favicon.ico是打包在根目录下与.html文件同级。</p>
 
       
     </div>
@@ -508,7 +515,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://tmac.wang/2018/05/vuecli+webpack打包后背景图片的引用路径问题/" title="vuecli+webpack打包后背景图片的引用路径问题">http://tmac.wang/2018/05/vuecli+webpack打包后背景图片的引用路径问题/</a>
+      <a href="http://tmac.wang/2018/05/vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总/" title="vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总">http://tmac.wang/2018/05/vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -680,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#打包后引用js及css文件路径错误"><span class="nav-number">1.</span> <span class="nav-text">打包后引用js及css文件路径错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#css中背景图片的路径引用问题"><span class="nav-number">2.</span> <span class="nav-text">css中背景图片的路径引用问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#打包后引用js及css文件路径错误"><span class="nav-number">1.</span> <span class="nav-text">打包后引用js及css文件路径错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#css中背景图片的路径引用问题"><span class="nav-number">2.</span> <span class="nav-text">css中背景图片的路径引用问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#favcion-ico默认不打包问题"><span class="nav-number">3.</span> <span class="nav-text">favcion.ico默认不打包问题</span></a></li></ol></div>
             
 
           </div>
