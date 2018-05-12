@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://tmac.wang/2018/06/2018%E6%9C%80%E6%96%B0%E7%89%88%E6%90%AD%E5%BB%BAShadowsocks%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-05-12T10:22:08.461Z</lastmod>
+    <data>
+        <display>
+        <title>2018最新版搭建Shadowsocks方法</title>
+        <pubTime>2018-06-27T09:50:42.000Z</pubTime>
+        
+        <tag>Shadowsocks</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://tmac.wang/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2018/05/vue-cli+webpack%E6%89%93%E5%8C%85%E5%90%8E%E5%BC%95%E7%94%A8js%E5%8F%8Acss%E7%9A%84%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E3%80%81%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%9A%84%E5%BC%95%E7%94%A8%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98%E5%8F%8Afavcion.ico%E9%BB%98%E8%AE%A4%E4%B8%8D%E6%89%93%E5%8C%85%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2018-05-11T08:42:59.947Z</lastmod>
     <data>
@@ -11,9 +33,9 @@
         <title>vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总</title>
         <pubTime>2018-05-10T16:20:42.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>vue</tag>
+         
+        <tag>webpack</tag>
          
         <tag>vuecli</tag>
          
@@ -620,9 +642,9 @@
         <title>自行搭建Shadowsocks服务</title>
         <pubTime>2017-10-10T14:30:42.000Z</pubTime>
         
-        <tag>工具</tag>
-         
         <tag>Shadowsocks</tag>
+         
+        <tag>工具</tag>
          
          
            
@@ -838,9 +860,9 @@
         <title>Zeplin新版介绍--已全面支持windows系统</title>
         <pubTime>2017-05-08T14:43:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>工具</tag>
+         
+        <tag>技巧</tag>
          
         <tag>Zeplin</tag>
          
@@ -940,6 +962,50 @@
     </url>
 
     
+  <url>
+    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>《深入浅出Node.js》笔记摘录（一）</title>
+        <pubTime>2017-04-26T14:14:42.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node.js" url="http://tmac.wang/categories/Node-js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://tmac.wang/2017/04/hello-world/</loc>
@@ -977,50 +1043,6 @@
            
              
               <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>mac</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>《深入浅出Node.js》笔记摘录（一）</title>
-        <pubTime>2017-04-26T14:14:42.000Z</pubTime>
-        
-        <tag>Node</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="Node.js" url="http://tmac.wang/categories/Node-js/"/>
           
         </display>
     </data>
