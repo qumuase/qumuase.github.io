@@ -962,27 +962,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
@@ -1005,27 +984,6 @@
     </url>
 
     
-  <url>
-    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>《深入浅出Node.js》笔记摘录（一）</title>
-        <pubTime>2017-04-26T14:14:42.000Z</pubTime>
-        
-        <tag>Node</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="Node.js" url="http://tmac.wang/categories/Node-js/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
@@ -1067,6 +1025,48 @@
            
              
               <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/04/%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>《深入浅出Node.js》笔记摘录（一）</title>
+        <pubTime>2017-04-26T14:14:42.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node.js" url="http://tmac.wang/categories/Node-js/"/>
           
         </display>
     </data>
