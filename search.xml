@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[MAC Chrome 插件安装目录]]></title>
       <url>%2F2018%2F06%2FMAC%20Chrome%20%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[MAC Chrome 插件安装目录: 1~/Library/Application\ Support/Google/Chrome/Default/Extensions]]></content>
+      <content type="text"><![CDATA[MAC Chrome 插件安装目录: 1~/Library/Application\ Support/Google/Chrome/Default/Extensions 如图看到的是安装的所有插件，字符串代表的就是插件的ID，查找到对应插件ID即可进一步看到插件的文件目录。 在Chrome拓展程序页面可以看到每个插件所对应的ID。]]></content>
     </entry>
 
     
