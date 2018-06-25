@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[MAC Chrome 插件安装目录]]></title>
+      <url>%2F2018%2F06%2FMAC%20Chrome%20%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95%2F</url>
+      <content type="text"><![CDATA[MAC Chrome 插件安装目录: 1~/Library/Application\ Support/Google/Chrome/Default/Extensions]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[npm拉取资源镜像替换]]></title>
       <url>%2F2018%2F06%2Fnpm%E6%8B%89%E5%8F%96%E8%B5%84%E6%BA%90%E9%95%9C%E5%83%8F%E6%9B%BF%E6%8D%A2%2F</url>
       <content type="text"><![CDATA[1$ npm config set registry https://registry.npm.taobao.org 配置后可通过下面方式来验证是否成功 12$ npm config get registry或 npm info express]]></content>

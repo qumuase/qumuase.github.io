@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://tmac.wang/2018/06/MAC%20Chrome%20%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95/</loc>
+    <lastmod>2018-06-25T08:35:50.928Z</lastmod>
+    <data>
+        <display>
+        <title>MAC Chrome 插件安装目录</title>
+        <pubTime>2018-06-25T08:42:42.000Z</pubTime>
+        
+        <tag>MAC</tag>
+         
+        <tag>Chrome</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2018/06/npm%E6%8B%89%E5%8F%96%E8%B5%84%E6%BA%90%E9%95%9C%E5%83%8F%E6%9B%BF%E6%8D%A2/</loc>
     <lastmod>2018-06-15T04:04:32.498Z</lastmod>
     <data>
@@ -79,9 +101,9 @@
         
         <tag>vue</tag>
          
-        <tag>webpack</tag>
-         
         <tag>vuecli</tag>
+         
+        <tag>webpack</tag>
          
          
            
@@ -150,13 +172,13 @@
         <title>Hexo搭建Github Pages及Coding Pages博客操作指南</title>
         <pubTime>2017-06-14T14:26:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>Hexo</tag>
          
         <tag>Github-Pages</tag>
          
         <tag>Coding-Pages</tag>
+         
+        <tag>技巧</tag>
          
          
            
@@ -1004,43 +1026,23 @@
     </url>
 
     
+    
   <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>Framework7实现路由跳转</title>
-        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
         
-        <tag>技巧</tag>
+        <tag>python</tag>
          
-        <tag>Framework7</tag>
+        <tag>mac</tag>
          
          
            
              
               <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
@@ -1072,16 +1074,36 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>test</tag>
          
-        <tag>mac</tag>
+         
+           
+             
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Framework7实现路由跳转</title>
+        <pubTime>2017-05-17T07:06:42.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+        <tag>Framework7</tag>
          
          
            
