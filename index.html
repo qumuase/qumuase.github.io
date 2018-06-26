@@ -1930,7 +1930,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/04/Axios拦截器/">
+    <link itemprop="mainEntityOfPage" href="http://tmac.wang/2018/04/HTTP请求中Form Data与RequestPayload的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="清道夫">
@@ -1952,8 +1952,8 @@
             
               
                 
-                <a class="post-title-link" href="/2018/04/Axios拦截器/" itemprop="url">
-                  Axios拦截器
+                <a class="post-title-link" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/" itemprop="url">
+                  HTTP请求中Form Data与RequestPayload的区别
                 </a>
               
             
@@ -2022,7 +2022,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  179 字
+                  461 字
                 </span>
               
 
@@ -2038,7 +2038,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -2057,15 +2057,14 @@
 
       
         
-          
-            <h4 id="请求拦截器"><a href="#请求拦截器" class="headerlink" title="请求拦截器"></a>请求拦截器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 添加请求拦截器</div><div class="line">axios.interceptors.request.use(function (config) &#123;</div><div class="line">    // 在发送请求之前做些什么</div><div class="line">   return config;</div><div class="line">&#125;, function (error) &#123;</div><div class="line">    // 对请求错误做些什么</div><div class="line">    return Promise.reject(error);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>可添加对前置data的处理：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">axios.interceptors.request.use(function (config) &#123;</div><div class="line">    if(config.method == &apos;post&apos;)&#123;</div><div class="line">        config.data = qs.stringify(config.data)</div><div class="line">    &#125;</div><div class="line">    return config</div><div class="line">&#125;,function (error) &#123;</div><div class="line">    // 对请求错误做些什么</div><div class="line">    return Promise.reject(error);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h4 id="响应拦截器"><a href="#响应拦截器" class="headerlink" title="响应拦截器"></a>响应拦截器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 添加响应拦截器</div><div class="line">axios.interceptors.response.use(function (response) &#123;</div><div class="line">    // 对响应数据做点什么</div><div class="line">   return response;</div><div class="line">&#125;, function (error) &#123;</div><div class="line">    // 对响应错误做点什么</div><div class="line">    return Promise.reject(error);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>可添加对权限码的处理：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">axios.interceptors.response.use(function (response) &#123;</div><div class="line">    switch (response.data.code) &#123;</div><div class="line">        case 401:</div><div class="line">            Message.error(&apos;暂无权限！&apos;)</div><div class="line">            break;</div><div class="line">        case 200:</div><div class="line">            return response;</div><div class="line">            break;</div><div class="line">        default:</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line">&#125;, function (error) &#123;</div><div class="line">    return Promise.reject(error);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-
-          
+          <h4 id="定义方式的区别"><a href="#定义方式的区别" class="headerlink" title="定义方式的区别"></a>定义方式的区别</h4><p>Form Data和RequestPayload是浏览器传输数据给接口的其中两种格式，浏览器是通过Content-Type来进行区分。<br>如果是<code>application/x-www-form-urlencoded</code>，则为formdata方式，如果是<code>application/json</code>方式，则为payload方式。<br><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fqiwibvfyoj30ni0e20tv.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/006tKfTcly1fqiwje9b03j315i0e60ua.jpg" alt=""></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/HTTP请求中Form Data与RequestPayload的区别/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
