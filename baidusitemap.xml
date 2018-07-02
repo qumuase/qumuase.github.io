@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://tmac.wang/2018/07/weex%20unable%20to%20find%20utility%20%22simctl%22%20%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2018-07-02T07:36:53.618Z</lastmod>
+    <data>
+        <display>
+        <title>weex unable to find utility "simctl" 报错解决方案</title>
+        <pubTime>2018-07-02T07:34:42.000Z</pubTime>
+        
+        <tag>weex</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2018/06/MAC%20Chrome%20%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95/</loc>
     <lastmod>2018-06-25T08:40:30.677Z</lastmod>
     <data>
@@ -99,9 +119,9 @@
         <title>vue-cli+webpack打包后引用js及css的路径错误、背景图片的引用路径问题及favcion.ico默认不打包问题汇总</title>
         <pubTime>2018-05-10T16:20:42.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>vue</tag>
+         
+        <tag>webpack</tag>
          
         <tag>vuecli</tag>
          
@@ -1005,21 +1025,44 @@
 
     
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>python3-3.5.1 already installed, it's just not linked</title>
-        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
+        <title>JSON数据的那点事</title>
+        <pubTime>2017-04-20T16:30:00.000Z</pubTime>
         
-        <tag>python</tag>
+        <tag>前端</tag>
          
-        <tag>mac</tag>
+        <tag>js</tag>
+         
+        <tag>json</tag>
          
          
            
              
-              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
+              <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
@@ -1042,27 +1085,6 @@
            
              
               <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
@@ -1092,23 +1114,21 @@
 
     
   <url>
-    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
         <display>
-        <title>JSON数据的那点事</title>
-        <pubTime>2017-04-20T16:30:00.000Z</pubTime>
+        <title>python3-3.5.1 already installed, it's just not linked</title>
+        <pubTime>2016-04-13T02:34:42.000Z</pubTime>
         
-        <tag>前端</tag>
+        <tag>python</tag>
          
-        <tag>js</tag>
-         
-        <tag>json</tag>
+        <tag>mac</tag>
          
          
            
              
-              <breadCrumb title="JavaScript" url="http://tmac.wang/categories/JavaScript/"/>
+              <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
           
         </display>
     </data>
