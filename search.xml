@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[七牛 qshell 上传报错]]></title>
+      <url>%2F2018%2F07%2F%E4%B8%83%E7%89%9B%20qshell%20%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99%2F</url>
+      <content type="text"><![CDATA[Upload config no --bucket specified 配置了正确的仓库之后上传依然提示请指定仓库，后来发现是本地上传目录包含空格的原因。直接修改本地上传名称即可。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[weex unable to find utility "simctl" 报错解决方案]]></title>
       <url>%2F2018%2F07%2Fweex%20unable%20to%20find%20utility%20%22simctl%22%20%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
       <content type="text"><![CDATA[weex debug 报错 unable to find utility “simctl”1Error: simctl error running &apos;list&apos;: xcrun: error: unable to find utility &quot;simctl&quot;, not a developer tool or in PATH 直接命令行执行以下命令即可： 1sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/ 同样也可以通过 xcode 进行设置：在Xcode&gt;preferences&gt;Locations下，设置 Command line Tools 之后再运行即可。]]></content>
