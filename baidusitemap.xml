@@ -5,11 +5,11 @@
     
   <url>
     <loc>http://tmac.wang/2018/07/brew%20install%20watchman%20%E5%90%84%E7%A7%8D%E5%A4%B1%E8%B4%A5%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2018-07-17T13:25:36.491Z</lastmod>
+    <lastmod>2018-07-17T13:29:22.487Z</lastmod>
     <data>
         <display>
         <title>brew install watchman 各种失败折腾</title>
-        <pubTime>2018-07-12T13:33:42.000Z</pubTime>
+        <pubTime>2018-07-17T13:33:42.000Z</pubTime>
         
         <tag>watchman</tag>
          
@@ -195,9 +195,9 @@
         
         <tag>vue</tag>
          
-        <tag>webpack</tag>
-         
         <tag>vuecli</tag>
+         
+        <tag>webpack</tag>
          
          
            
@@ -1084,9 +1084,9 @@
         <title>Godaddy域名续费技巧</title>
         <pubTime>2017-06-20T15:16:42.000Z</pubTime>
         
-        <tag>技巧</tag>
-         
         <tag>Godaddy</tag>
+         
+        <tag>技巧</tag>
          
          
            
@@ -1121,7 +1121,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://tmac.wang/2017/04/hello-world/</loc>
@@ -1208,6 +1207,7 @@
     </data>
     </url>
 
+    
     
     
 </urlset>
