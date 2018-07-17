@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://tmac.wang/2018/07/brew%20install%20watchman%20%E5%90%84%E7%A7%8D%E5%A4%B1%E8%B4%A5%E6%8A%98%E8%85%BE/</loc>
+    
+    <lastmod>2018-07-17T13:25:36.491Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://tmac.wang/2018/07/%E4%B8%83%E7%89%9B%20qshell%20%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/</loc>
     
     <lastmod>2018-07-15T16:06:07.518Z</lastmod>
@@ -373,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
+    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
@@ -387,7 +394,7 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
@@ -401,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <loc>http://tmac.wang/2017/05/Framework7%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://tmac.wang/2017/04/json%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/</loc>
+    <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     
