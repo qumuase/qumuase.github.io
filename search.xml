@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[React Native 报错综合处理]]></title>
+      <url>%2F2018%2F07%2FReact%20Native%20%E6%8A%A5%E9%94%99%E7%BB%BC%E5%90%88%E5%A4%84%E7%90%86%2F</url>
+      <content type="text"><![CDATA[No bundle URL present123No bundle URL presentMake sure you’re running a packager server or have included a .jsbundle file in your application bundle 使用 ignite 脚手架构建时候出现此错误，目前可行的解决方法是：1、删除 iOS/build 目录。2、同时打开两个iterm 的窗口，一个在项目目录下执行 react-native start，另外一个执行 react-native run-ios即可。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[brew install watchman 各种失败折腾]]></title>
       <url>%2F2018%2F07%2Fbrew%20install%20watchman%20%E5%90%84%E7%A7%8D%E5%A4%B1%E8%B4%A5%E6%8A%98%E8%85%BE%2F</url>
       <content type="text"><![CDATA[万恶原由在执行某个项目过程中，提示需要卸载 watchman 然后再安装上最新版本。但是在卸载成功之后通过 brew 再也装不上了。 报错详情12345678910Error: Could not link:/usr/local/share/doc/homebrewPlease delete these paths and run `brew update`.==&gt; Installing dependencies for watchman: openssl, readline, sqlite, python@2, pcre==&gt; Installing watchman dependency: openssl==&gt; Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2o_2.high_sierra.bottle.tar.gz######################################################################## 100.0%==&gt; Pouring openssl-1.0.2o_2.high_sierra.bottle.tar.gzError: Permission denied @ unlink_internal - /usr/local/opt/openssl 提示的是请删除这些路径并更新 brew ，但是“these paths”指的是哪些内容，完全没看到。 尝试解决根据最后的报错提示是由于权限不够，所以查了一圈尝试了sudo chown -R $(whoami):admin /usr/local，结果还是提示报错：chown: /usr/local: Operation not permitted，还是权限问题。 最后继续尝试 brew install watchman，这次报错提示出现了所谓的“these paths”，按照提示列表逐个删除。例如： rm -rf /usr/local/etc/bash_completion.d/brew。最后再尝试brew update。意外的成功了。保险起见执行更新watchman试一试： brew upgrade watchman返回了： Error: watchman 4.9.0 already installed，舒服了😄。 参考： 官网多个安装方式：https://facebook.github.io/watchman/docs/install.html]]></content>
