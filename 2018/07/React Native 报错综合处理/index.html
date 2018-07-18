@@ -101,7 +101,8 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcly1ftdc6zu5kmj30xa076mx9.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1ftdc7f1pkoj30v60b4aar.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcly1ftdc7qpr1hj30no1citai.jpg">
-<meta property="og:updated_time" content="2018-07-17T16:46:08.953Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1ftdu5up0u7j30je0rgjsr.jpg">
+<meta property="og:updated_time" content="2018-07-18T03:14:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Native 报错综合处理">
 <meta name="twitter:description" content="No bundle URL present123No bundle URL presentMake sure you’re running a packager server or have included a .jsbundle file in your application bundle
@@ -432,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  94 字
+                  491 字
                 </span>
               
 
@@ -448,7 +449,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  3 分钟
                 </span>
               
             </div>
@@ -466,9 +467,12 @@
       
 
       
-        <h5 id="No-bundle-URL-present"><a href="#No-bundle-URL-present" class="headerlink" title="No bundle URL present"></a>No bundle URL present</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">No bundle URL present</div><div class="line"></div><div class="line">Make sure you’re running a packager server or have included a .jsbundle file in your application bundle</div></pre></td></tr></table></figure>
+        <h4 id="No-bundle-URL-present"><a href="#No-bundle-URL-present" class="headerlink" title="No bundle URL present"></a>No bundle URL present</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">No bundle URL present</div><div class="line"></div><div class="line">Make sure you’re running a packager server or have included a .jsbundle file in your application bundle</div></pre></td></tr></table></figure>
 <p>使用 ignite 脚手架构建时候出现此错误，目前可行的解决方法是：<br>1、删除 iOS/build 目录。<br>2、同时打开两个iterm 的窗口，一个在项目目录下执行 react-native start，另外一个执行 react-native run-ios即可。<br><img src="https://ws1.sinaimg.cn/large/006tKfTcly1ftdc6zu5kmj30xa076mx9.jpg" alt=""><br><img src="https://ws4.sinaimg.cn/large/006tKfTcly1ftdc7f1pkoj30v60b4aar.jpg" alt=""><br><img src="https://ws1.sinaimg.cn/large/006tKfTcly1ftdc7qpr1hj30no1citai.jpg" alt=""></p>
 <a id="more"></a>
+<h4 id="invalid-tar-file-react-native-web-maps…"><a href="#invalid-tar-file-react-native-web-maps…" class="headerlink" title="invalid tar file (react-native-web-maps…"></a>invalid tar file (react-native-web-maps…</h4><p>rm -rf node_modules 之后 cnpm install 重新安装依赖时一直报错 invalid tar file (react-native-web-maps，拍查不到具体的报错原因。于是打开 Shadowsocks 的全局模式，改为使用 npm J进行安装，安装过程中清晰的提示了警告信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">lottie-react-native@2.3.2 requires a peer of react-native@&gt;=0.46 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-google-maps@7.3.0 requires a peer of react@15.5.4 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-google-maps@7.3.0 requires a peer of react-dom@15.5.4 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-native@0.44.3 requires a peer of react@16.0.0-alpha.6 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-native-gesture-handler@1.0.0-alpha.41 requires a peer of react-native@&gt;= 0.50.0 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-native-maps@0.21.0 requires a peer of react-native@^0.51 || ^0.52 || ^0.53 || ^0.54 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-native-svg@6.2.2 requires a peer of react-native@&gt;=0.50.0 but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-native-web-maps@0.1.0 requires a peer of react-native-web@* but none is installed. You must install peer dependencies yourself.</div><div class="line">npm WARN react-prop-types-element-of-type@2.2.0 requires a peer of react@^0.14.6 || ^15.0.0-0 but none is installed. You must install peer dependencies yourself.</div></pre></td></tr></table></figure>
+<p>包的互相依赖版本存在问题，那就从这入手解决了。<br>如果后续版本过低在编译阶段模拟器也会进行报错提示：<br><img src="https://ws4.sinaimg.cn/large/006tKfTcly1ftdu5up0u7j30je0rgjsr.jpg" alt=""><br>总结一点：<strong>尽量使用npm，远离cnpm，的确会导致未知错误。</strong></p>
 
       
     </div>
@@ -667,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#No-bundle-URL-present"><span class="nav-number">1.</span> <span class="nav-text">No bundle URL present</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#No-bundle-URL-present"><span class="nav-number">1.</span> <span class="nav-text">No bundle URL present</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#invalid-tar-file-react-native-web-maps…"><span class="nav-number">2.</span> <span class="nav-text">invalid tar file (react-native-web-maps…</span></a></li></ol></div>
             
 
           </div>
