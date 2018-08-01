@@ -262,6 +262,20 @@
 
     
     <entry>
+      <title><![CDATA[解决每次终端重启后环境变量不会自动更新的问题]]></title>
+      <url>%2F2017%2F07%2F%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1%E7%BB%88%E7%AB%AF%E9%87%8D%E5%90%AF%E5%90%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+      <content type="text"><![CDATA[每次都需要手动 source $HOME/.bash_profile 更新环境变量的原因是因为zsh下，终端启动时 ~/.bash_profile 将不会被加载。好坑啊。 解决办法就是修改 ～/.zshrc ，在其中添加：source ～/.bash_profile]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[flutter packages get 下载依赖时进程占用处理]]></title>
+      <url>%2F2017%2F07%2Fflutter%20packages%20get%20%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96%E6%97%B6%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A8%E5%A4%84%E7%90%86%2F</url>
+      <content type="text"><![CDATA[初始化flutter之后安装依赖提示进程被占用，所以一直等待其他进程结束。 1Waiting for another flutter command to release the startup lock... 解决办法：使用电脑自带的活动监视器查杀Dart进程。如上图，点击右键或者左上角删除按钮退出所有Dart进程，然后再重新执行安装依赖即可。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[nuxtjs实践--由PWA转战SSR之路]]></title>
       <url>%2F2017%2F07%2Fnuxtjs%E5%AE%9E%E8%B7%B5--%E7%94%B1PWA%E8%BD%AC%E6%88%98SSR%E4%B9%8B%E8%B7%AF%2F</url>
       <content type="text"><![CDATA[错误集锦问题： 页面实例化两次，导致数据同样加载两次。迹象： 页面提示标签嵌套可能不符合语义规定，或者是标签未完整闭合。 排查结果： 在footer组件内存在p标签嵌套 elementUI popover 组件的情况。如下图，实例化后即会出现不合理的标签嵌套问题。解决方法： 修改标签的嵌套方式。]]></content>
