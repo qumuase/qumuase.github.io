@@ -305,9 +305,9 @@
         
         <tag>vue</tag>
          
-        <tag>vuecli</tag>
-         
         <tag>webpack</tag>
+         
+        <tag>vuecli</tag>
          
          
            
@@ -1187,6 +1187,26 @@
 
     
   <url>
+    <loc>http://tmac.wang/2017/04/hello-world/</loc>
+    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tmac.wang/2016/04/python3-3.5.1%20already%20installed,%20it's%20just%20not%20linked/</loc>
     <lastmod>2017-08-17T07:35:34.000Z</lastmod>
     <data>
@@ -1202,26 +1222,6 @@
            
              
               <breadCrumb title="技术相关" url="http://tmac.wang/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tmac.wang/2017/04/hello-world/</loc>
-    <lastmod>2017-08-17T07:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-04-20T14:08:18.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="test" url="http://tmac.wang/categories/test/"/>
           
         </display>
     </data>
